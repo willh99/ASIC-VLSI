@@ -6,7 +6,7 @@ This is a collection of homework assignments, labs, and a final project for ASIC
 
 The first few labs and homeworks are fairly trivial Verilog scripts and tests for simple pieces of hardware such as full adders.
 
-The real interesting stuff lyes in lab 5 and beyond where a TinyMIPS ALU has be coded, tested, and synthesized using Cadence Encounter, Simvision, and Tetramax. The final project consists of a TinyMIPS (aka TimyMIPS) ALU. The modules can be found in`project/hw_files/src/mips.v`.  The ALU supports the following 8-bit operations:
+The real interesting stuff lies in lab 5 and beyond where a TinyMIPS ALU has be coded, tested, and synthesized using Cadence Encounter, Simvision, and Tetramax. The final project consists of a TinyMIPS (aka TimyMIPS) ALU. The modules can be found in`project/hw_files/src/mips.v`.  The ALU supports the following 8-bit operations:
 
   * Addition	(add)
   * Subtraction	(sub)
