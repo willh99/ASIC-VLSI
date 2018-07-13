@@ -1,0 +1,60 @@
+Host command: /apps/cadence/ius/tools/verilog/bin/verilog.exe
+Command arguments:
+    DFF_tb.v
+    DFlipFlop_p.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created Feb  5, 2018  22:50:58
+Tool:	VERILOG-XL	08.20.001-p   Feb  5, 2018  22:50:58
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "DFF_tb.v"
+Compiling source file "DFlipFlop_p.v"
+Highest level modules:
+DFlipFlop_tb
+
+		time, 	clk,	reset,	en,	D,	Q,	Qb
+                   0,	0,	0,	0,	0,	x,	x
+                  10,	1,	0,	0,	0,	x,	x
+                  20,	0,	1,	0,	1,	x,	x
+                  30,	1,	1,	0,	1,	x,	x
+                  40,	0,	0,	0,	0,	x,	x
+                  50,	1,	0,	0,	0,	x,	x
+                  60,	0,	0,	0,	1,	x,	x
+                  70,	1,	0,	0,	0,	x,	x
+                  80,	0,	0,	1,	0,	x,	x
+                  90,	1,	1,	1,	1,	1,	0
+                 100,	0,	1,	1,	1,	1,	0
+                 110,	1,	0,	1,	0,	0,	1
+                 120,	0,	0,	1,	0,	0,	1
+                 130,	1,	0,	1,	1,	0,	1
+                 140,	0,	0,	1,	0,	0,	1
+L40 "DFF_tb.v": $finish at simulation time 145
+0 simulation events (use +profile or +listcounts option to count)
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   Feb  5, 2018  22:50:59

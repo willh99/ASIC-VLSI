@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : Scan path
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:29:09 2011
+****************************************
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Existing DFT
+========================================
+
+========================================
+AS SPECIFIED BY USER
+========================================
+
+
+========================================
+AS BUILT BY insert_dft
+========================================
+
+Scan_path    Len   ScanDataIn  ScanDataOut ScanEnable  MasterClock SlaveClock
+-----------  ----- ----------- ----------- ----------- ----------- -----------
+I 1          3     test_si     test_so     test_se     clk         -
+
+1

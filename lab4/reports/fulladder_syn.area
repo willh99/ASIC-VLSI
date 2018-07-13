@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : area
+Design : fulladder
+Version: G-2012.06
+Date   : Mon Feb 12 12:15:30 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                            5
+Number of nets:                            14
+Number of cells:                            9
+Number of combinational cells:              7
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          6
+Number of references:                       4
+
+Combinational area:       2736.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          2736.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : cell
+Design : fulladder
+Version: G-2012.06
+Date   : Mon Feb 12 12:15:30 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        OR2X2           osu05_stdcells  288.000000
+U2                        INVX2           osu05_stdcells  144.000000
+U3                        INVX2           osu05_stdcells  144.000000
+U4                        INVX2           osu05_stdcells  144.000000
+U5                        INVX2           osu05_stdcells  144.000000
+U6                        INVX2           osu05_stdcells  144.000000
+U7                        INVX2           osu05_stdcells  144.000000
+ha1                       halfadder_1                     792.000000
+                                                                    h
+ha2                       halfadder_0                     792.000000
+                                                                    h
+--------------------------------------------------------------------------------
+Total 9 cells                                             2736.000000
+1

@@ -1,0 +1,150 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:28:59 2011
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+a[0]           in      0.0000   0.0000   --       0.41   --         
+a[1]           in      0.0000   0.0000   --       0.41   --         
+a[2]           in      0.0000   0.0000   --       0.41   --         
+a[3]           in      0.0000   0.0000   --       0.41   --         
+b[0]           in      0.0000   0.0000   --       0.41   --         
+b[1]           in      0.0000   0.0000   --       0.41   --         
+b[2]           in      0.0000   0.0000   --       0.41   --         
+b[3]           in      0.0000   0.0000   --       0.41   --         
+cin            in      0.0000   0.0000   --       0.41   --         
+clk            in      0.0000   0.0000   --       0.41   --         
+rst            in      0.0000   0.0000   --       0.41   --         
+cout           out     0.1000   0.0000   --      --      --         
+sum[0]         out     0.1000   0.0000   --      --      --         
+sum[1]         out     0.1000   0.0000   --      --      --         
+sum[2]         out     0.1000   0.0000   --      --      --         
+sum[3]         out     0.1000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+a[0]               1      --              --              --        -- 
+a[1]               1      --              --              --        -- 
+a[2]               1      --              --              --        -- 
+a[3]               1      --              --              --        -- 
+b[0]               1      --              --              --        -- 
+b[1]               1      --              --              --        -- 
+b[2]               1      --              --              --        -- 
+b[3]               1      --              --              --        -- 
+cin                1      --              --              --        -- 
+clk                1      --              --              --        -- 
+rst                1      --              --              --        -- 
+cout               1      --              --              --        -- 
+sum[0]             1      --              --              --        -- 
+sum[1]             1      --              --              --        -- 
+sum[2]             1      --              --              --        -- 
+sum[3]             1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+a[0]          2.00    2.00    2.00    2.00  clk       1.00
+a[1]          2.00    2.00    2.00    2.00  clk       1.00
+a[2]          2.00    2.00    2.00    2.00  clk       1.00
+a[3]          2.00    2.00    2.00    2.00  clk       1.00
+b[0]          2.00    2.00    2.00    2.00  clk       1.00
+b[1]          2.00    2.00    2.00    2.00  clk       1.00
+b[2]          2.00    2.00    2.00    2.00  clk       1.00
+b[3]          2.00    2.00    2.00    2.00  clk       1.00
+cin           2.00    2.00    2.00    2.00  clk       1.00
+clk           2.00    2.00    2.00    2.00  clk       1.00
+rst           2.00    2.00    2.00    2.00  clk       1.00
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+a[0]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+a[1]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+a[2]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+a[3]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+b[0]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+b[1]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+b[2]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+b[3]         osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+cin          osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+clk          osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+rst          osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+a[0]          --      --     --      --     --      --     --     --        -- 
+a[1]          --      --     --      --     --      --     --     --        -- 
+a[2]          --      --     --      --     --      --     --     --        -- 
+a[3]          --      --     --      --     --      --     --     --        -- 
+b[0]          --      --     --      --     --      --     --     --        -- 
+b[1]          --      --     --      --     --      --     --     --        -- 
+b[2]          --      --     --      --     --      --     --     --        -- 
+b[3]          --      --     --      --     --      --     --     --        -- 
+cin           --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+rst           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+a[0]          --      --      --      -- 
+a[1]          --      --      --      -- 
+a[2]          --      --      --      -- 
+a[3]          --      --      --      -- 
+b[0]          --      --      --      -- 
+b[1]          --      --      --      -- 
+b[2]          --      --      --      -- 
+b[3]          --      --      --      -- 
+cin           --      --      --      -- 
+clk           --      --      --      -- 
+rst           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+cout          1.65    1.65    1.65    1.65  clk       8.00
+sum[0]        1.65    1.65    1.65    1.65  clk       8.00
+sum[1]        1.65    1.65    1.65    1.65  clk       8.00
+sum[2]        1.65    1.65    1.65    1.65  clk       8.00
+sum[3]        1.65    1.65    1.65    1.65  clk       8.00
+
+1

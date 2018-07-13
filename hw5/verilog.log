@@ -1,0 +1,251 @@
+Host command: /apps/cadence/ius/tools/verilog/bin/verilog.exe
+Command arguments:
+    controller_tb.v
+    controller.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created May  3, 2018  14:02:02
+Tool:	VERILOG-XL	08.20.001-p   May  3, 2018  14:02:02
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "controller_tb.v"
+Compiling source file "controller.v"
+Highest level modules:
+controller_tb
+
+Inputs: op = xxxxxx :: reset = 0 
+alusrca = 0 :: alusrcb = 00 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = xxxxxx :: reset = 1 
+alusrca = 0 :: alusrcb = 00 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0001 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0010 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0100 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 1000 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000000 :: reset = 0 
+alusrca = 0 :: alusrcb = 11 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 100000 :: reset = 0 
+alusrca = 1 :: alusrcb = 00 
+aluop = 10 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 100000 :: reset = 0 
+alusrca = 0 :: alusrcb = 00 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 1 
+regdst = 1 
+
+Inputs: op = 100000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0001 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 100000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0010 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 100000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0100 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 101000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 1000 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 101000 :: reset = 0 
+alusrca = 0 :: alusrcb = 11 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 101000 :: reset = 0 
+alusrca = 1 :: alusrcb = 10 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 101000 :: reset = 0 
+alusrca = 0 :: alusrcb = 00 
+aluop = 00 :: branch = x 
+iord = 1 :: irwrite = 0000 
+memread = 0 :: memwrite = 1 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 101000 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0001 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000100 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0010 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000100 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0100 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000100 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 1000 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000100 :: reset = 0 
+alusrca = 0 :: alusrcb = 11 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000100 :: reset = 0 
+alusrca = 1 :: alusrcb = 00 
+aluop = 01 :: branch = x 
+iord = 0 :: irwrite = 0000 
+memread = 0 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 0 
+pcsource = 01 :: regwrite = 0 
+regdst = 0 
+
+Inputs: op = 000010 :: reset = 0 
+alusrca = 0 :: alusrcb = 01 
+aluop = 00 :: branch = x 
+iord = 0 :: irwrite = 0001 
+memread = 1 :: memwrite = 0 
+memtoreg = 0 :: pcwrite = 1 
+pcsource = 00 :: regwrite = 0 
+regdst = 0 
+
+L28 "controller_tb.v": $finish at simulation time 44
+0 simulation events (use +profile or +listcounts option to count)
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   May  3, 2018  14:02:02

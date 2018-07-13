@@ -1,0 +1,55 @@
+Host command: /apps/cadence/ius/tools/verilog/bin/verilog.exe
+Command arguments:
+    alu_tb.v
+    alu.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created Mar  4, 2018  17:53:49
+Tool:	VERILOG-XL	08.20.001-p   Mar  4, 2018  17:53:49
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "alu_tb.v"
+Compiling source file "alu.v"
+
+Warning!  Port sizes differ in port connection (port 3)     [Verilog-PCDPC]    
+          "alu_tb.v", 8: result
+Highest level modules:
+alu8_tb
+
+		time, 	a,	b,	sel,		result
+                   0,	xxxxxxxx,	xxxxxxxx,	xxx,		    x
+                  10,	00001001,	00000101,	001,		   14
+                  20,	00001001,	00000101,	010,		    4
+                  30,	00001001,	00000101,	011,		    1
+                  40,	00001001,	00000101,	100,		   13
+                  50,	00001001,	00000101,	101,		    0
+L16 "alu_tb.v": $finish at simulation time 60
+1 warning
+0 simulation events (use +profile or +listcounts option to count)
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   Mar  4, 2018  17:53:51

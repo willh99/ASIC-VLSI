@@ -1,0 +1,154 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : mips
+Version: G-2012.06
+Date   : Tue May  1 11:30:17 2018
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000   --      --      --         
+memdata[0]     in      0.0000   0.0000   --      --      --         
+memdata[1]     in      0.0000   0.0000   --      --      --         
+memdata[2]     in      0.0000   0.0000   --      --      --         
+memdata[3]     in      0.0000   0.0000   --      --      --         
+memdata[4]     in      0.0000   0.0000   --      --      --         
+memdata[5]     in      0.0000   0.0000   --      --      --         
+memdata[6]     in      0.0000   0.0000   --      --      --         
+memdata[7]     in      0.0000   0.0000   --      --      --         
+reset          in      0.0000   0.0000   --      --      --         
+adr[0]         out     0.1000   0.0000   --      --      --         
+adr[1]         out     0.1000   0.0000   --      --      --         
+adr[2]         out     0.1000   0.0000   --      --      --         
+adr[3]         out     0.1000   0.0000   --      --      --         
+adr[4]         out     0.1000   0.0000   --      --      --         
+adr[5]         out     0.1000   0.0000   --      --      --         
+adr[6]         out     0.1000   0.0000   --      --      --         
+adr[7]         out     0.1000   0.0000   --      --      --         
+memread        out     0.1000   0.0000   --      --      --         
+memwrite       out     0.1000   0.0000   --      --      --         
+writedata[0]   out     0.1000   0.0000   --      --      --         
+writedata[1]   out     0.1000   0.0000   --      --      --         
+writedata[2]   out     0.1000   0.0000   --      --      --         
+writedata[3]   out     0.1000   0.0000   --      --      --         
+writedata[4]   out     0.1000   0.0000   --      --      --         
+writedata[5]   out     0.1000   0.0000   --      --      --         
+writedata[6]   out     0.1000   0.0000   --      --      --         
+writedata[7]   out     0.1000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+memdata[0]         1      --              --              --        -- 
+memdata[1]         1      --              --              --        -- 
+memdata[2]         1      --              --              --        -- 
+memdata[3]         1      --              --              --        -- 
+memdata[4]         1      --              --              --        -- 
+memdata[5]         1      --              --              --        -- 
+memdata[6]         1      --              --              --        -- 
+memdata[7]         1      --              --              --        -- 
+reset              1      --              --              --        -- 
+adr[0]             1      --              --              --        -- 
+adr[1]             1      --              --              --        -- 
+adr[2]             1      --              --              --        -- 
+adr[3]             1      --              --              --        -- 
+adr[4]             1      --              --              --        -- 
+adr[5]             1      --              --              --        -- 
+adr[6]             1      --              --              --        -- 
+adr[7]             1      --              --              --        -- 
+memread            1      --              --              --        -- 
+memwrite           1      --              --              --        -- 
+writedata[0]       1      --              --              --        -- 
+writedata[1]       1      --              --              --        -- 
+writedata[2]       1      --              --              --        -- 
+writedata[3]       1      --              --              --        -- 
+writedata[4]       1      --              --              --        -- 
+writedata[5]       1      --              --              --        -- 
+writedata[6]       1      --              --              --        -- 
+writedata[7]       1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           2.00    2.00    2.00    2.00  clk       1.00  
+memdata[0]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[1]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[2]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[3]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[4]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[5]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[6]    2.00    2.00    2.00    2.00  clk       1.00  
+memdata[7]    2.00    2.00    2.00    2.00  clk       1.00  
+reset         2.00    2.00    2.00    2.00  clk       1.00  
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+memdata[0]    --      --     --      --     --      --     --     --        -- 
+memdata[1]    --      --     --      --     --      --     --     --        -- 
+memdata[2]    --      --     --      --     --      --     --     --        -- 
+memdata[3]    --      --     --      --     --      --     --     --        -- 
+memdata[4]    --      --     --      --     --      --     --     --        -- 
+memdata[5]    --      --     --      --     --      --     --     --        -- 
+memdata[6]    --      --     --      --     --      --     --     --        -- 
+memdata[7]    --      --     --      --     --      --     --     --        -- 
+reset         --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+memdata[0]    --      --      --      -- 
+memdata[1]    --      --      --      -- 
+memdata[2]    --      --      --      -- 
+memdata[3]    --      --      --      -- 
+memdata[4]    --      --      --      -- 
+memdata[5]    --      --      --      -- 
+memdata[6]    --      --      --      -- 
+memdata[7]    --      --      --      -- 
+reset         --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+adr[0]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[1]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[2]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[3]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[4]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[5]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[6]        1.65    1.65    1.65    1.65  clk       8.00  
+adr[7]        1.65    1.65    1.65    1.65  clk       8.00  
+memread       1.65    1.65    1.65    1.65  clk       8.00  
+memwrite      1.65    1.65    1.65    1.65  clk       8.00  
+writedata[0]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[1]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[2]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[3]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[4]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[5]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[6]
+              1.65    1.65    1.65    1.65  clk       8.00  
+writedata[7]
+              1.65    1.65    1.65    1.65  clk       8.00  
+
+1

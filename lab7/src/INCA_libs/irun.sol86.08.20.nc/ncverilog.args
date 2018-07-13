@@ -1,0 +1,11 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-l
+nc.log
++access+r
+osu05_stdcells.v
+osu_scan.v
+ripplecarry4_clk_scan.v
+ripplecarry4_clk_tb_patterns.v

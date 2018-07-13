@@ -1,0 +1,18 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.sol86.08.20.nc
+-RUNMODE
+osu05_stdcells.v
+osu_scan.v
+ripplecarry4_clk_scan.v
+ripplecarry4_clk_tb_patterns.v
+-CDSLIB
+./INCA_libs/irun.sol86.08.20.nc/cdsrun.lib
+-HDLVAR
+./INCA_libs/irun.sol86.08.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-ALLOWUNBOUND

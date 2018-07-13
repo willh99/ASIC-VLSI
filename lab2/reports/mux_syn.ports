@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : mux
+Version: G-2012.06
+Date   : Mon Feb 12 11:43:53 2018
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+a              in      0.0000   0.0000   --       0.41   --         
+b              in      0.0000   0.0000   --       0.41   --         
+s              in      0.0000   0.0000   --       0.41   --         
+c              out     0.1000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+a                  1      --              --              --        -- 
+b                  1      --              --              --        -- 
+s                  1      --              --              --        -- 
+c                  1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+a             2.00    2.00    2.00    2.00  clock     1.00  
+b             2.00    2.00    2.00    2.00  clock     1.00  
+s             2.00    2.00    2.00    2.00  clock     1.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+a            osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+b            osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+s            osu05_stdcells/INVX1
+                                osu05_stdcells/INVX1
+                                                     -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+a             --      --     --      --     --      --     --     --        -- 
+b             --      --     --      --     --      --     --     --        -- 
+s             --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+a             --      --      --      -- 
+b             --      --      --      -- 
+s             --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+c             1.65    1.65    1.65    1.65  clock     8.00  
+
+1

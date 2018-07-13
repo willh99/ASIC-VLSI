@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : area
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:28:59 2011
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:               16
+Number of nets:                44
+Number of cells:               29
+Number of references:           7
+
+Combinational area:       11088.000000
+Noncombinational area:    2592.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          13680.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : cell
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:28:59 2011
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U3                        AND2X2          osu05_stdcells  288.000000
+U4                        AND2X2          osu05_stdcells  288.000000
+U5                        AND2X2          osu05_stdcells  288.000000
+U6                        INVX2           osu05_stdcells  144.000000
+U7                        INVX2           osu05_stdcells  144.000000
+U8                        INVX2           osu05_stdcells  144.000000
+U9                        INVX2           osu05_stdcells  144.000000
+U10                       INVX2           osu05_stdcells  144.000000
+U11                       INVX2           osu05_stdcells  144.000000
+U12                       INVX2           osu05_stdcells  144.000000
+U13                       INVX2           osu05_stdcells  144.000000
+U14                       INVX2           osu05_stdcells  144.000000
+U15                       INVX2           osu05_stdcells  144.000000
+U16                       INVX2           osu05_stdcells  144.000000
+U17                       INVX2           osu05_stdcells  144.000000
+U18                       INVX2           osu05_stdcells  144.000000
+U19                       INVX2           osu05_stdcells  144.000000
+U20                       INVX2           osu05_stdcells  144.000000
+U21                       INVX2           osu05_stdcells  144.000000
+U22                       INVX2           osu05_stdcells  144.000000
+U23                       INVX2           osu05_stdcells  144.000000
+U24                       INVX2           osu05_stdcells  144.000000
+c0_reg_reg                DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+c1_reg_reg                DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+c2_reg_reg                DFFPOSX1        osu05_stdcells  864.000000
+                                                                    n
+fa0                       fulladder_3                     1872.000000
+                                                                    h
+fa1                       fulladder_2                     1872.000000
+                                                                    h
+fa2                       fulladder_1                     1872.000000
+                                                                    h
+fa3                       fulladder_0                     1872.000000
+                                                                    h
+--------------------------------------------------------------------------------
+Total 29 cells                                            13680.000000
+1

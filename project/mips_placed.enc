@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/seas/willh99/ece128/project/mips_placed.enc                     
+#                                              #
+################################################
+restoreDesign /home/seas/willh99/ece128/project/mips_placed.enc.dat mips

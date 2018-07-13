@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : mux
+Version: G-2012.06
+Date   : Mon Feb 12 11:43:53 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                            4
+Number of nets:                             7
+Number of cells:                            4
+Number of combinational cells:              4
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          3
+Number of references:                       2
+
+Combinational area:        792.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:           792.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : cell
+Design : mux
+Version: G-2012.06
+Date   : Mon Feb 12 11:43:53 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        INVX2           osu05_stdcells  144.000000
+U3                        AOI22X1         osu05_stdcells  360.000000
+U4                        INVX2           osu05_stdcells  144.000000
+U5                        INVX2           osu05_stdcells  144.000000
+--------------------------------------------------------------------------------
+Total 4 cells                                             792.000000
+1

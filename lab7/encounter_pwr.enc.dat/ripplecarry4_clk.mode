@@ -1,0 +1,2 @@
+setDelayCalMode -engine default
+setImportMode -config true -keepEmptyModule true -treatUndefinedCellAsBbox false -useLefDef56 true

@@ -1,0 +1,19 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:29:07 2011
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   ripplecarry4_clk             0.00       15408.00       -15408.00 (VIOLATED)
+
+
+1

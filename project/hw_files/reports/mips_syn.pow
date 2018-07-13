@@ -1,0 +1,53 @@
+Loading db file '/home/seas/willh99/ece128/project/hw_files/db/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : mips
+Version: G-2012.06
+Date   : Tue May  1 11:30:18 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/seas/willh99/ece128/project/hw_files/db/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   6.5915 mW   (85%)
+  Net Switching Power  =   1.1362 mW   (15%)
+                         ---------
+Total Dynamic Power    =   7.7277 mW  (100%)
+
+Cell Leakage Power     =  87.2723 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           5.8478            0.2250           34.0571            6.0728  (  78.59%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.7437            0.9112           53.2151            1.6549  (  21.41%)
+--------------------------------------------------------------------------------------------------
+Total              6.5915 mW         1.1362 mW        87.2722 nW         7.7277 mW
+1

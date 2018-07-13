@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : design
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:28:58 2011
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    osu05_stdcells (File: /apps/design_kits/osu_stdcells_v2p7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Local Link Library:
+
+    {osu05_stdcells.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : typical
+    Library : osu05_stdcells
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   5.00
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : hierarchy
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:28:59 2011
+****************************************
+
+ripplecarry4_clk
+    AND2X2                  osu05_stdcells
+    DFFPOSX1                osu05_stdcells
+    INVX2                   osu05_stdcells
+    fulladder_0
+        OR2X2               osu05_stdcells
+        halfadder_0
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+        halfadder_1
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+    fulladder_1
+        OR2X2               osu05_stdcells
+        halfadder_2
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+        halfadder_3
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+    fulladder_2
+        OR2X2               osu05_stdcells
+        halfadder_4
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+        halfadder_5
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+    fulladder_3
+        OR2X2               osu05_stdcells
+        halfadder_6
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+        halfadder_7
+            AND2X2          osu05_stdcells
+            XOR2X1          osu05_stdcells
+1

@@ -1,0 +1,370 @@
+Host command: /apps/cadence/ius/tools/verilog/bin/verilog.exe
+Command arguments:
+    mips_tb2.v
+    full_mips_scan.v
+    mips_scan.v
+    mem_sim.v
+    osu05_stdcells.v
+    osu_scan.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created May  1, 2018  11:31:17
+Tool:	VERILOG-XL	08.20.001-p   May  1, 2018  11:31:17
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "mips_tb2.v"
+Compiling source file "full_mips_scan.v"
+Compiling source file "mips_scan.v"
+Compiling source file "mem_sim.v"
+Compiling source file "osu05_stdcells.v"
+Compiling source file "osu_scan.v"
+
+Warning!  Too few module port connections                   [Verilog-TFNPC]    
+          "mips_scan.v", 192: add_1_root_add_317_2(.A(a), .                    
+          B(b2), .CI(n40), .SUM(sum))
+
+Warning!  Too few module port connections                   [Verilog-TFNPC]    
+          "mips_scan.v", 134: U1_7(.A(A[7]), .B(B[7]), .C(                     
+          carry[7]), .YS(SUM[7]))
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 260: thold_negedge$D$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 262: thold_posedge$D$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 298: thold_negedge$D$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 300: thold_posedge$D$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 361: trec$R$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 573: thold_negedge$D$CLK
+
+Warning!  Delay value is negative or too large: set to 0    [Verilog-SVTL]     
+          "osu05_stdcells.v", 575: thold_posedge$D$CLK
+Highest level modules:
+mips_tb2
+AND2X1
+BUFX2
+BUFX4
+CLKBUF1
+CLKBUF2
+CLKBUF3
+DFFNEGX1
+DFFPOSX1
+DFFSR
+HAX1
+INVX1
+INVX4
+LATCH
+MUX2X1
+OR2X1
+PADINC
+PADINOUT
+PADOUT
+TBUFX1
+TBUFX2
+XNOR2X1
+PADNC
+PADFC
+PADGND
+PADVDD
+DFFNEGX1_SCAN
+DFFSR_SCAN
+
+memory scrubbed
+File loaded.
+Contents of Mem after reading data file:
+          0:20
+          1:03
+          2:00
+          3:08
+          4:20
+          5:04
+          6:00
+          7:01
+          8:20
+          9:05
+         10:ff
+         11:ff
+         12:10
+         13:60
+         14:00
+         15:04
+         16:00
+         17:85
+         18:20
+         19:20
+         20:00
+         21:85
+         22:28
+         23:22
+         24:20
+         25:63
+         26:ff
+         27:ff
+         28:08
+         29:00
+         30:00
+         31:03
+         32:a0
+         33:04
+         34:00
+         35:ff
+         36:00
+         37:04
+         38:18
+         39:25
+         40:08
+         41:00
+         42:00
+         43:01
+         44:00
+         45:00
+         46:00
+         47:00
+         48:00
+         49:00
+         50:00
+         51:00
+         52:00
+         53:00
+         54:00
+         55:00
+         56:00
+         57:00
+         58:00
+         59:00
+         60:00
+         61:00
+         62:00
+         63:00
+         64:00
+         65:00
+         66:00
+         67:00
+         68:00
+         69:00
+         70:00
+         71:00
+         72:00
+         73:00
+         74:00
+         75:00
+         76:00
+         77:00
+         78:00
+         79:00
+         80:00
+         81:00
+         82:00
+         83:00
+         84:00
+         85:00
+         86:00
+         87:00
+         88:00
+         89:00
+         90:00
+         91:00
+         92:00
+         93:00
+         94:00
+         95:00
+         96:00
+         97:00
+         98:00
+         99:00
+        100:00
+        101:00
+        102:00
+        103:00
+        104:00
+        105:00
+        106:00
+        107:00
+        108:00
+        109:00
+        110:00
+        111:00
+        112:00
+        113:00
+        114:00
+        115:00
+        116:00
+        117:00
+        118:00
+        119:00
+        120:00
+        121:00
+        122:00
+        123:00
+        124:00
+        125:00
+        126:00
+        127:00
+        128:00
+        129:00
+        130:00
+        131:00
+        132:00
+        133:00
+        134:00
+        135:00
+        136:00
+        137:00
+        138:00
+        139:00
+        140:00
+        141:00
+        142:00
+        143:00
+        144:00
+        145:00
+        146:00
+        147:00
+        148:00
+        149:00
+        150:00
+        151:00
+        152:00
+        153:00
+        154:00
+        155:00
+        156:00
+        157:00
+        158:00
+        159:00
+        160:00
+        161:00
+        162:00
+        163:00
+        164:00
+        165:00
+        166:00
+        167:00
+        168:00
+        169:00
+        170:00
+        171:00
+        172:00
+        173:00
+        174:00
+        175:00
+        176:00
+        177:00
+        178:00
+        179:00
+        180:00
+        181:00
+        182:00
+        183:00
+        184:00
+        185:00
+        186:00
+        187:00
+        188:00
+        189:00
+        190:00
+        191:00
+        192:00
+        193:00
+        194:00
+        195:00
+        196:00
+        197:00
+        198:00
+        199:00
+        200:00
+        201:00
+        202:00
+        203:00
+        204:00
+        205:00
+        206:00
+        207:00
+        208:00
+        209:00
+        210:00
+        211:00
+        212:00
+        213:00
+        214:00
+        215:00
+        216:00
+        217:00
+        218:00
+        219:00
+        220:00
+        221:00
+        222:00
+        223:00
+        224:00
+        225:00
+        226:00
+        227:00
+        228:00
+        229:00
+        230:00
+        231:00
+        232:00
+        233:00
+        234:00
+        235:00
+        236:00
+        237:00
+        238:00
+        239:00
+        240:00
+        241:00
+        242:00
+        243:00
+        244:00
+        245:00
+        246:00
+        247:00
+        248:00
+        249:00
+        250:00
+        251:00
+        252:00
+        253:00
+        254:00
+        255:00
+Fibonacci Simulation was successful!!!
+Ending Simulation.
+L46 "mips_tb2.v": $finish at simulation time 1204000
+9 warnings
+0 simulation events (use +profile or +listcounts option to count) + 119786 accelerated events + 62 timing check events
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.1 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   May  1, 2018  11:31:17

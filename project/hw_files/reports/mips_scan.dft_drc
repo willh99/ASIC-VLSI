@@ -1,0 +1,209 @@
+In mode: Internal_scan...
+  Design has scan chains in this mode
+  Design is scan routed
+  Post-DFT DRC enabled
+
+Information: Starting test design rule checking. (TEST-222)
+  Loading test protocol
+  ...basic checks...
+  ...basic sequential cell checks...
+  ...checking vector rules...
+  ...checking clock rules...
+  ...checking scan chain rules...
+  ...checking scan compression rules...
+  ...checking X-state rules...
+  ...checking tristate rules...
+  ...extracting scan details...
+
+-----------------------------------------------------------------
+  DRC Report
+
+  Total violations: 0
+
+-----------------------------------------------------------------
+
+
+Test Design rule checking did not find violations
+
+-----------------------------------------------------------------
+  Sequential Cell Report
+
+  0 out of 132 sequential cells have violations
+
+-----------------------------------------------------------------
+
+SEQUENTIAL CELLS WITHOUT VIOLATIONS
+      * 132 cells are valid scan cells
+         dp/areg/q_reg_7_
+         dp/areg/q_reg_6_
+         dp/areg/q_reg_5_
+         dp/areg/q_reg_4_
+         dp/areg/q_reg_3_
+         dp/areg/q_reg_2_
+         dp/areg/q_reg_1_
+         dp/areg/q_reg_0_
+         dp/ir0/q_reg_7_
+         dp/ir0/q_reg_6_
+         dp/ir0/q_reg_5_
+         dp/ir0/q_reg_4_
+         dp/ir0/q_reg_3_
+         dp/ir0/q_reg_2_
+         dp/ir0/q_reg_1_
+         dp/ir0/q_reg_0_
+         dp/ir1/q_reg_7_
+         dp/ir1/q_reg_6_
+         dp/ir1/q_reg_5_
+         dp/ir1/q_reg_4_
+         dp/ir1/q_reg_3_
+         dp/ir1/q_reg_2_
+         dp/ir1/q_reg_1_
+         dp/ir1/q_reg_0_
+         dp/ir2/q_reg_7_
+         dp/ir2/q_reg_6_
+         dp/ir2/q_reg_5_
+         dp/ir2/q_reg_4_
+         dp/ir2/q_reg_3_
+         dp/ir2/q_reg_2_
+         dp/ir2/q_reg_1_
+         dp/ir2/q_reg_0_
+         dp/ir3/q_reg_7_
+         dp/ir3/q_reg_6_
+         dp/ir3/q_reg_5_
+         dp/ir3/q_reg_4_
+         dp/ir3/q_reg_3_
+         dp/ir3/q_reg_2_
+         dp/ir3/q_reg_1_
+         dp/ir3/q_reg_0_
+         dp/mdr/q_reg_7_
+         dp/mdr/q_reg_6_
+         dp/mdr/q_reg_5_
+         dp/mdr/q_reg_4_
+         dp/mdr/q_reg_3_
+         dp/mdr/q_reg_2_
+         dp/mdr/q_reg_1_
+         dp/mdr/q_reg_0_
+         dp/pcreg/q_reg_7_
+         dp/pcreg/q_reg_6_
+         dp/pcreg/q_reg_5_
+         dp/pcreg/q_reg_4_
+         dp/pcreg/q_reg_3_
+         dp/pcreg/q_reg_2_
+         dp/pcreg/q_reg_1_
+         dp/pcreg/q_reg_0_
+         dp/res/q_reg_7_
+         dp/res/q_reg_6_
+         dp/res/q_reg_5_
+         dp/res/q_reg_4_
+         dp/res/q_reg_3_
+         dp/res/q_reg_2_
+         dp/res/q_reg_1_
+         dp/res/q_reg_0_
+         dp/rf/RAM_reg_7__7_
+         dp/rf/RAM_reg_7__6_
+         dp/rf/RAM_reg_7__5_
+         dp/rf/RAM_reg_7__4_
+         dp/rf/RAM_reg_7__3_
+         dp/rf/RAM_reg_7__2_
+         dp/rf/RAM_reg_7__1_
+         dp/rf/RAM_reg_7__0_
+         dp/rf/RAM_reg_6__7_
+         dp/rf/RAM_reg_6__6_
+         dp/rf/RAM_reg_6__5_
+         dp/rf/RAM_reg_6__4_
+         dp/rf/RAM_reg_6__3_
+         dp/rf/RAM_reg_6__2_
+         dp/rf/RAM_reg_6__1_
+         dp/rf/RAM_reg_6__0_
+         dp/rf/RAM_reg_5__7_
+         dp/rf/RAM_reg_5__6_
+         dp/rf/RAM_reg_5__5_
+         dp/rf/RAM_reg_5__4_
+         dp/rf/RAM_reg_5__3_
+         dp/rf/RAM_reg_5__2_
+         dp/rf/RAM_reg_5__1_
+         dp/rf/RAM_reg_5__0_
+         dp/rf/RAM_reg_4__7_
+         dp/rf/RAM_reg_4__6_
+         dp/rf/RAM_reg_4__5_
+         dp/rf/RAM_reg_4__4_
+         dp/rf/RAM_reg_4__3_
+         dp/rf/RAM_reg_4__2_
+         dp/rf/RAM_reg_4__1_
+         dp/rf/RAM_reg_4__0_
+         dp/rf/RAM_reg_3__7_
+         dp/rf/RAM_reg_3__6_
+         dp/rf/RAM_reg_3__5_
+         dp/rf/RAM_reg_3__4_
+         dp/rf/RAM_reg_3__3_
+         dp/rf/RAM_reg_3__2_
+         dp/rf/RAM_reg_3__1_
+         dp/rf/RAM_reg_3__0_
+         dp/rf/RAM_reg_2__7_
+         dp/rf/RAM_reg_2__6_
+         dp/rf/RAM_reg_2__5_
+         dp/rf/RAM_reg_2__4_
+         dp/rf/RAM_reg_2__3_
+         dp/rf/RAM_reg_2__2_
+         dp/rf/RAM_reg_2__1_
+         dp/rf/RAM_reg_2__0_
+         dp/rf/RAM_reg_1__7_
+         dp/rf/RAM_reg_1__6_
+         dp/rf/RAM_reg_1__5_
+         dp/rf/RAM_reg_1__4_
+         dp/rf/RAM_reg_1__3_
+         dp/rf/RAM_reg_1__2_
+         dp/rf/RAM_reg_1__1_
+         dp/rf/RAM_reg_1__0_
+         dp/wrd/q_reg_7_
+         dp/wrd/q_reg_6_
+         dp/wrd/q_reg_5_
+         dp/wrd/q_reg_4_
+         dp/wrd/q_reg_3_
+         dp/wrd/q_reg_2_
+         dp/wrd/q_reg_1_
+         dp/wrd/q_reg_0_
+         cont/state_reg_0_
+         cont/state_reg_3_
+         cont/state_reg_2_
+         cont/state_reg_1_
+
+....Inferring feed-through connections....
+Information: Test design rule checking completed. (TEST-123)
+  Running test coverage estimation...
+ 5992 faults were added to fault list.
+ ATPG performed for stuck fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=5009, abort_limit=10...
+ 0            4186    823         0/0/0    86.27%      0.00
+ 0             456    367         0/0/0    93.88%      0.00
+ 0             203    164         0/0/0    97.26%      0.01
+ 0              57     99         7/0/0    98.35%      0.01
+ 0              92      7         7/0/0    99.88%      0.01
+ 0               7      0         7/0/0   100.00%      0.01
+ 
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ 
+
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       5984
+ Possibly detected                PT          0
+ Undetectable                     UD          8
+ ATPG untestable                  AU          0
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                              5992
+ test coverage                           100.00%
+ -----------------------------------------------
+  Information: The test coverage above may be inferior
+               than the real test coverage with customized
+               protocol and test simulation library.
+1

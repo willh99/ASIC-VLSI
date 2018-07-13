@@ -1,0 +1,311 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mux
+Version: G-2012.06
+Date   : Mon Feb 12 11:43:53 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: s (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  s (in)                                   0.07       2.37 f
+  U4/Y (INVX2)                             0.10       2.48 r
+  U5/Y (INVX2)                             0.07       2.55 f
+  U3/Y (AOI22X1)                           0.14       2.70 r
+  U1/Y (INVX2)                             0.15       2.85 f
+  c (out)                                  0.00       2.85 f
+  data arrival time                                   2.85
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -2.85
+  -----------------------------------------------------------
+  slack (MET)                                         5.80
+
+
+  Startpoint: s (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  s (in)                                   0.06       2.36 r
+  U4/Y (INVX2)                             0.11       2.46 f
+  U5/Y (INVX2)                             0.08       2.54 r
+  U3/Y (AOI22X1)                           0.15       2.69 f
+  U1/Y (INVX2)                             0.15       2.84 r
+  c (out)                                  0.00       2.84 r
+  data arrival time                                   2.84
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -2.84
+  -----------------------------------------------------------
+  slack (MET)                                         5.81
+
+
+  Startpoint: s (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  s (in)                                   0.07       2.37 f
+  U4/Y (INVX2)                             0.10       2.48 r
+  U3/Y (AOI22X1)                           0.12       2.59 f
+  U1/Y (INVX2)                             0.15       2.75 r
+  c (out)                                  0.00       2.75 r
+  data arrival time                                   2.75
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -2.75
+  -----------------------------------------------------------
+  slack (MET)                                         5.90
+
+
+  Startpoint: s (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  s (in)                                   0.06       2.36 r
+  U4/Y (INVX2)                             0.11       2.46 f
+  U3/Y (AOI22X1)                           0.12       2.58 r
+  U1/Y (INVX2)                             0.15       2.74 f
+  c (out)                                  0.00       2.74 f
+  data arrival time                                   2.74
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -2.74
+  -----------------------------------------------------------
+  slack (MET)                                         5.91
+
+
+  Startpoint: a (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  a (in)                                   0.07       2.37 f
+  U3/Y (AOI22X1)                           0.14       2.51 r
+  U1/Y (INVX2)                             0.15       2.66 f
+  c (out)                                  0.00       2.66 f
+  data arrival time                                   2.66
+
+  clock clock (rise edge)                 10.00      10.00
+  clock network delay (ideal)              0.30      10.30
+  output external delay                   -1.65       8.65
+  data required time                                  8.65
+  -----------------------------------------------------------
+  data required time                                  8.65
+  data arrival time                                  -2.66
+  -----------------------------------------------------------
+  slack (MET)                                         5.99
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : mux
+Version: G-2012.06
+Date   : Mon Feb 12 11:43:53 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: b (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  b (in)                                   0.06       2.36 r
+  U3/Y (AOI22X1)                           0.11       2.47 f
+  U1/Y (INVX2)                             0.14       2.60 r
+  c (out)                                  0.00       2.60 r
+  data arrival time                                   2.60
+
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.60
+  -----------------------------------------------------------
+  slack (MET)                                         3.95
+
+
+  Startpoint: a (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  a (in)                                   0.06       2.36 r
+  U3/Y (AOI22X1)                           0.15       2.51 f
+  U1/Y (INVX2)                             0.14       2.65 r
+  c (out)                                  0.00       2.65 r
+  data arrival time                                   2.65
+
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.65
+  -----------------------------------------------------------
+  slack (MET)                                         4.00
+
+
+  Startpoint: b (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b (in)                                   0.07       2.37 f
+  U3/Y (AOI22X1)                           0.13       2.50 r
+  U1/Y (INVX2)                             0.15       2.65 f
+  c (out)                                  0.00       2.65 f
+  data arrival time                                   2.65
+
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.65
+  -----------------------------------------------------------
+  slack (MET)                                         4.00
+
+
+  Startpoint: a (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  a (in)                                   0.07       2.37 f
+  U3/Y (AOI22X1)                           0.14       2.51 r
+  U1/Y (INVX2)                             0.15       2.66 f
+  c (out)                                  0.00       2.66 f
+  data arrival time                                   2.66
+
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.66
+  -----------------------------------------------------------
+  slack (MET)                                         4.01
+
+
+  Startpoint: s (input port clocked by clock)
+  Endpoint: c (output port clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  s (in)                                   0.06       2.36 r
+  U4/Y (INVX2)                             0.11       2.46 f
+  U3/Y (AOI22X1)                           0.12       2.58 r
+  U1/Y (INVX2)                             0.15       2.73 f
+  c (out)                                  0.00       2.73 f
+  data arrival time                                   2.73
+
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.73
+  -----------------------------------------------------------
+  slack (MET)                                         4.08
+
+
+1

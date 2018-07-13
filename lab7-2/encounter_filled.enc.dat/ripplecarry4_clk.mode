@@ -1,0 +1,8 @@
+setAnalysisMode -analysisType single -clkSrcPath true -clockPropagation sdcControl -virtualIPO false
+setExtractRCMode  -engine default
+setDelayCalMode -engine default
+setNanoRouteMode -quiet -routeSiEffort "low"
+setNanoRouteMode -quiet -routeWithSiDriven false
+setNanoRouteMode -quiet -routeWithTimingDriven false
+
+setPlaceMode -fp false -ignoreScan true -timingDriven true

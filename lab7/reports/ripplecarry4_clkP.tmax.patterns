@@ -1,0 +1,192 @@
+ Pattern 0 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 0011011100 000
+ Time 140: measure_all_pos =101001
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      111
+ Pattern 1 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          100
+ Time 100: force_all_pis = 1010101010 000
+ Time 140: measure_all_pos =100111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      010
+ Pattern 2 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 1111101010 000
+ Time 140: measure_all_pos =010010
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      011
+ Pattern 3 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          011
+ Time 100: force_all_pis = 0011001000 000
+ Time 140: measure_all_pos =011100
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      010
+ Pattern 4 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 1000110100 010
+ Time 140: measure_all_pos =010110
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 5 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          110
+ Time 100: force_all_pis = 0110110000 111
+ Time 140: measure_all_pos =011011
+ Time 200: unload 1 =      110
+ Pattern 6 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          110
+ Time 100: force_all_pis = 0111100110 110
+ Time 140: measure_all_pos =001111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 7 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 1111000100 000
+ Time 140: measure_all_pos =101000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      101
+ Pattern 8 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 0111011000 110
+ Time 140: measure_all_pos =010100
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 9 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 1001010000 010
+ Time 140: measure_all_pos =001111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      100
+ Pattern 10 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          001
+ Time 100: force_all_pis = 1010000110 010
+ Time 140: measure_all_pos =100000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      011
+ Pattern 11 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 0001011010 010
+ Time 140: measure_all_pos =011000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      001
+ Pattern 12 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 0111010000 010
+ Time 140: measure_all_pos =110101
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      110
+ Pattern 13 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 0111111000 001
+ Time 140: measure_all_pos =110100
+ Time 200: unload 1 =      010
+ Pattern 0 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 0011011100 000
+ Time 140: measure_all_pos =101001
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      111
+ Pattern 1 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          100
+ Time 100: force_all_pis = 1010101010 000
+ Time 140: measure_all_pos =100111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      010
+ Pattern 2 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 1111101010 000
+ Time 140: measure_all_pos =010010
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      011
+ Pattern 3 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          011
+ Time 100: force_all_pis = 0011001000 000
+ Time 140: measure_all_pos =011100
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      010
+ Pattern 4 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 1000110100 010
+ Time 140: measure_all_pos =010110
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 5 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          110
+ Time 100: force_all_pis = 0110110000 111
+ Time 140: measure_all_pos =011011
+ Time 200: unload 1 =      110
+ Pattern 6 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          110
+ Time 100: force_all_pis = 0111100110 110
+ Time 140: measure_all_pos =001111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 7 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 1111000100 000
+ Time 140: measure_all_pos =101000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      101
+ Pattern 8 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 0111011000 110
+ Time 140: measure_all_pos =010100
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      000
+ Pattern 9 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 1001010000 010
+ Time 140: measure_all_pos =001111
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      100
+ Pattern 10 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          001
+ Time 100: force_all_pis = 1010000110 010
+ Time 140: measure_all_pos =100000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      011
+ Pattern 11 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          000
+ Time 100: force_all_pis = 0001011010 010
+ Time 140: measure_all_pos =011000
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      001
+ Pattern 12 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          111
+ Time 100: force_all_pis = 0111010000 010
+ Time 140: measure_all_pos =110101
+ Time 145: pulse clocks  clk (9)
+ Time 200: unload 1 =      110
+ Pattern 13 (full_sequential)
+ Time 0: period = 100
+ Time 0: load 1 =          010
+ Time 100: force_all_pis = 0111111000 001
+ Time 140: measure_all_pos =110100
+ Time 200: unload 1 =      010

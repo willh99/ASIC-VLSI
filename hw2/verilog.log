@@ -1,0 +1,53 @@
+Host command: /apps/cadence/ius/tools/verilog/bin/verilog.exe
+Command arguments:
+    multi8x8_tb.v
+    multi8x8.v
+
+Tool:	VERILOG-XL	08.20.001-p log file created Mar 18, 2018  15:21:58
+Tool:	VERILOG-XL	08.20.001-p   Mar 18, 2018  15:21:58
+
+Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
+Unpublished -- rights reserved under the copyright laws of the United States.
+
+Copyright (c) 1995-2004 UNIX Systems Laboratories, Inc.  Reproduced with Permission.
+
+THIS SOFTWARE AND ON-LINE DOCUMENTATION CONTAIN CONFIDENTIAL INFORMATION
+AND TRADE SECRETS OF CADENCE DESIGN SYSTEMS, INC.  USE, DISCLOSURE, OR
+REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF
+CADENCE DESIGN SYSTEMS, INC.
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c)(1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+                Cadence Design Systems, Inc.
+                555 River Oaks Parkway
+                San Jose, California  95134
+
+For technical assistance please contact the Cadence Response Center at
+1-877-CDS-4911 or send email to support@cadence.com
+
+For more information on Cadence's Verilog-XL product line send email to
+talkv@cadence.com
+
+Compiling source file "multi8x8_tb.v"
+Compiling source file "multi8x8.v"
+Highest level modules:
+multi8x8_tb
+
+		time, 	a,	b,	clk,		S
+                   0,	xxxxxxxx,	xxxxxxxx,	x,		    x
+                  10,	00000001,	00000001,	0,		    x
+                  20,	00000001,	00000001,	1,		    1
+                  30,	00000011,	00000100,	0,		   12
+                  40,	00000011,	00000100,	1,		   12
+                  50,	00000010,	00000010,	0,		    4
+                  60,	00010000,	10000000,	1,		 2048
+                  70,	00010000,	10000000,	0,		 2048
+L18 "multi8x8_tb.v": $finish at simulation time 80
+0 simulation events (use +profile or +listcounts option to count)
+CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
+End of Tool:	VERILOG-XL	08.20.001-p   Mar 18, 2018  15:22:00

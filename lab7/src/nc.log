@@ -1,0 +1,102 @@
+ncverilog: 08.20-s020: (c) Copyright 1995-2009 Cadence Design Systems, Inc.
+TOOL:	ncverilog	08.20-s020: Started on Mar 03, 2011 at 09:45:59 EST
+ncverilog
+	-l
+	nc.log
+	+access+r
+	osu05_stdcells.v
+	osu_scan.v
+	ripplecarry4_clk_scan.v
+	ripplecarry4_clk_tb_patterns.v
+file: osu05_stdcells.v
+file: osu_scan.v
+file: ripplecarry4_clk_scan.v
+	module worklib.halfadder_7:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_6:v
+		errors: 0, warnings: 0
+	module worklib.fulladder_3:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_0:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_1:v
+		errors: 0, warnings: 0
+	module worklib.fulladder_0:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_2:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_3:v
+		errors: 0, warnings: 0
+	module worklib.fulladder_1:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_4:v
+		errors: 0, warnings: 0
+	module worklib.halfadder_5:v
+		errors: 0, warnings: 0
+	module worklib.fulladder_2:v
+		errors: 0, warnings: 0
+	module worklib.ripplecarry4_clk:v
+		errors: 0, warnings: 0
+file: ripplecarry4_clk_tb_patterns.v
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+     $hold (negedge D, negedge CLK, thold_negedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,260|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (DFFNEGX1).
+     $hold (posedge D, negedge CLK, thold_posedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,262|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (DFFNEGX1).
+     $hold (negedge D, posedge CLK, thold_negedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,298|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (DFFPOSX1).
+     $hold (posedge D, posedge CLK, thold_posedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,300|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (DFFPOSX1).
+     $recovery(posedge R, posedge CLK &&& \D&S , trec$R$CLK, NOTIFIER);
+                                                          |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,361|58): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (DFFSR).
+     $hold (negedge D, negedge CLK, thold_negedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,573|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (LATCH).
+     $hold (posedge D, negedge CLK, thold_posedge$D$CLK,  NOTIFIER);
+                                                      |
+ncelab: *W,CUNGL1 (./osu05_stdcells.v,575|54): Negative timing check limit not allowed in a 1 limit timing check, setting to 0 in instance (LATCH).
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.AAA_tmax_testbench_1_16:v <0x6fe162eb>
+			streams:  36, words: 38133
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 94      56
+		UDPs:                    10       7
+		Primitives:             107       6
+		Timing outputs:          74       7
+		Registers:               39      45
+		Scalar wires:            93       -
+		Expanded wires:           8       2
+		Vectored wires:           1       -
+		Named events:            23      23
+		Always blocks:           23      23
+		Initial blocks:           1       1
+		Cont. assignments:        7      10
+		Timing checks:           31       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.AOI21X1:v
+Loading snapshot worklib.AOI21X1:v .................... Done
+ncsim> source /apps/cadence/ius/tools/inca/files/ncsimrc
+ncsim> run
+//            0.00 ns : Begin test_setup
+//          200.00 ns : Begin patterns, first pattern = 0
+//          200.00 ns : ...begin scan load for pattern 0
+//         2700.00 ns : ...begin scan load for pattern 5
+//         5100.00 ns : ...begin scan load for pattern 10
+//         7200.00 ns : Simulation of 14 patterns completed with 0 errors
+
+Memory Usage - 290.8M program + 5.8M data = 296.6M total
+CPU Usage - 0.1s system + 0.0s user = 0.1s total (3.0% cpu)
+Simulation complete via $finish(2) at time 7200 NS + 0
+./ripplecarry4_clk_tb_patterns.v:691       if (verbose >=2) $finish(2);
+ncsim> exit
+TOOL:	ncverilog	08.20-s020: Exiting on Mar 03, 2011 at 09:46:04 EST  (total: 00:00:05)

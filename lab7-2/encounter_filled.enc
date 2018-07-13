@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/seas/willh99/ece128/lab7-2/encounter_filled.enc                     
+#                                              #
+################################################
+restoreDesign /home/seas/willh99/ece128/lab7-2/encounter_filled.enc.dat ripplecarry4_clk

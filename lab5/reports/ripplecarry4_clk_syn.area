@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : area
+Design : ripplecarry4_clk
+Version: G-2012.06
+Date   : Mon Apr 23 11:51:59 2018
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /apps/synopsys/synthesis/libraries/syn/gtech.db)
+
+Number of ports:                           16
+Number of nets:                            30
+Number of cells:                           13
+Number of combinational cells:              6
+Number of sequential cells:                 3
+Number of macros:                           0
+Number of buf/inv:                          3
+Number of references:                       8
+
+Combinational area:          0.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:             0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
+ 
+****************************************
+Report : cell
+Design : ripplecarry4_clk
+Version: G-2012.06
+Date   : Mon Apr 23 11:51:59 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    c - control logic
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+B_0                       GTECH_BUF       gtech           0.000000  c, u
+B_1                       GTECH_BUF       gtech           0.000000  c, u
+C13                       *SELECT_OP_2.1_2.1_1            0.000000  s, u
+C14                       *SELECT_OP_2.1_2.1_1            0.000000  s, u
+C15                       *SELECT_OP_2.1_2.1_1            0.000000  s, u
+I_0                       GTECH_NOT       gtech           0.000000  u
+c0_reg_reg                **SEQGEN**                      0.000000  n, u
+c1_reg_reg                **SEQGEN**                      0.000000  n, u
+c2_reg_reg                **SEQGEN**                      0.000000  n, u
+fa0                       fulladder_3                     0.000000  h, u
+fa1                       fulladder_2                     0.000000  h, u
+fa2                       fulladder_1                     0.000000  h, u
+fa3                       fulladder_0                     0.000000  h, u
+--------------------------------------------------------------------------------
+Total 13 cells                                            0.000000
+1

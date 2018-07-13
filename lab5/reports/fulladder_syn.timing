@@ -1,0 +1,355 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : fulladder
+Version: G-2012.06
+Date   : Mon Feb 26 12:25:55 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  a (in)                                   0.07       2.37 f
+  U6/Y (INVX2)                             0.08       2.45 r
+  U7/Y (INVX2)                             0.12       2.57 f
+  ha1/a (halfadder_1)                      0.00       2.57 f
+  ha1/U2/Y (XOR2X1)                        0.28       2.85 f
+  ha1/s (halfadder_1)                      0.00       2.85 f
+  ha2/a (halfadder_0)                      0.00       2.85 f
+  ha2/U1/Y (AND2X2)                        0.25       3.10 f
+  ha2/c (halfadder_0)                      0.00       3.10 f
+  U1/Y (OR2X2)                             0.26       3.36 f
+  cout (out)                               0.00       3.36 f
+  data arrival time                                   3.36
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.36
+  -----------------------------------------------------------
+  slack (MET)                                        35.29
+
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  a (in)                                   0.06       2.36 r
+  U6/Y (INVX2)                             0.07       2.43 f
+  U7/Y (INVX2)                             0.11       2.54 r
+  ha1/a (halfadder_1)                      0.00       2.54 r
+  ha1/U2/Y (XOR2X1)                        0.28       2.82 f
+  ha1/s (halfadder_1)                      0.00       2.82 f
+  ha2/a (halfadder_0)                      0.00       2.82 f
+  ha2/U1/Y (AND2X2)                        0.25       3.07 f
+  ha2/c (halfadder_0)                      0.00       3.07 f
+  U1/Y (OR2X2)                             0.26       3.33 f
+  cout (out)                               0.00       3.33 f
+  data arrival time                                   3.33
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.33
+  -----------------------------------------------------------
+  slack (MET)                                        35.32
+
+
+  Startpoint: b (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  b (in)                                   0.07       2.37 f
+  U4/Y (INVX2)                             0.08       2.45 r
+  U5/Y (INVX2)                             0.11       2.56 f
+  ha1/b (halfadder_1)                      0.00       2.56 f
+  ha1/U2/Y (XOR2X1)                        0.25       2.81 f
+  ha1/s (halfadder_1)                      0.00       2.81 f
+  ha2/a (halfadder_0)                      0.00       2.81 f
+  ha2/U1/Y (AND2X2)                        0.25       3.06 f
+  ha2/c (halfadder_0)                      0.00       3.06 f
+  U1/Y (OR2X2)                             0.26       3.32 f
+  cout (out)                               0.00       3.32 f
+  data arrival time                                   3.32
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.32
+  -----------------------------------------------------------
+  slack (MET)                                        35.33
+
+
+  Startpoint: a (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  a (in)                                   0.07       2.37 f
+  U6/Y (INVX2)                             0.08       2.45 r
+  U7/Y (INVX2)                             0.12       2.57 f
+  ha1/a (halfadder_1)                      0.00       2.57 f
+  ha1/U2/Y (XOR2X1)                        0.28       2.85 r
+  ha1/s (halfadder_1)                      0.00       2.85 r
+  ha2/a (halfadder_0)                      0.00       2.85 r
+  ha2/U1/Y (AND2X2)                        0.14       3.00 r
+  ha2/c (halfadder_0)                      0.00       3.00 r
+  U1/Y (OR2X2)                             0.31       3.31 r
+  cout (out)                               0.00       3.31 r
+  data arrival time                                   3.31
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.31
+  -----------------------------------------------------------
+  slack (MET)                                        35.34
+
+
+  Startpoint: b (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  b (in)                                   0.06       2.36 r
+  U4/Y (INVX2)                             0.07       2.43 f
+  U5/Y (INVX2)                             0.10       2.53 r
+  ha1/b (halfadder_1)                      0.00       2.53 r
+  ha1/U2/Y (XOR2X1)                        0.25       2.78 f
+  ha1/s (halfadder_1)                      0.00       2.78 f
+  ha2/a (halfadder_0)                      0.00       2.78 f
+  ha2/U1/Y (AND2X2)                        0.25       3.04 f
+  ha2/c (halfadder_0)                      0.00       3.04 f
+  U1/Y (OR2X2)                             0.26       3.29 f
+  cout (out)                               0.00       3.29 f
+  data arrival time                                   3.29
+
+  clock clk (rise edge)                   40.00      40.00
+  clock network delay (ideal)              0.30      40.30
+  output external delay                   -1.65      38.65
+  data required time                                 38.65
+  -----------------------------------------------------------
+  data required time                                 38.65
+  data arrival time                                  -3.29
+  -----------------------------------------------------------
+  slack (MET)                                        35.36
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 5
+        -sort_by group
+Design : fulladder
+Version: G-2012.06
+Date   : Mon Feb 26 12:25:55 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: cin (input port clocked by clk)
+  Endpoint: s (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  cin (in)                                 0.06       2.36 r
+  U2/Y (INVX2)                             0.07       2.43 f
+  U3/Y (INVX2)                             0.10       2.53 r
+  ha2/b (halfadder_0)                      0.00       2.53 r
+  ha2/U2/Y (XOR2X1)                        0.27       2.80 f
+  ha2/s (halfadder_0)                      0.00       2.80 f
+  s (out)                                  0.00       2.80 f
+  data arrival time                                   2.80
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.80
+  -----------------------------------------------------------
+  slack (MET)                                         4.15
+
+
+  Startpoint: cin (input port clocked by clk)
+  Endpoint: s (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  cin (in)                                 0.06       2.36 r
+  U2/Y (INVX2)                             0.07       2.43 f
+  U3/Y (INVX2)                             0.10       2.53 r
+  ha2/b (halfadder_0)                      0.00       2.53 r
+  ha2/U2/Y (XOR2X1)                        0.28       2.81 r
+  ha2/s (halfadder_0)                      0.00       2.81 r
+  s (out)                                  0.00       2.81 r
+  data arrival time                                   2.81
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.81
+  -----------------------------------------------------------
+  slack (MET)                                         4.16
+
+
+  Startpoint: cin (input port clocked by clk)
+  Endpoint: s (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  cin (in)                                 0.07       2.37 f
+  U2/Y (INVX2)                             0.08       2.45 r
+  U3/Y (INVX2)                             0.11       2.56 f
+  ha2/b (halfadder_0)                      0.00       2.56 f
+  ha2/U2/Y (XOR2X1)                        0.27       2.83 f
+  ha2/s (halfadder_0)                      0.00       2.83 f
+  s (out)                                  0.00       2.83 f
+  data arrival time                                   2.83
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.83
+  -----------------------------------------------------------
+  slack (MET)                                         4.18
+
+
+  Startpoint: cin (input port clocked by clk)
+  Endpoint: s (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 f
+  cin (in)                                 0.07       2.37 f
+  U2/Y (INVX2)                             0.08       2.45 r
+  U3/Y (INVX2)                             0.11       2.56 f
+  ha2/b (halfadder_0)                      0.00       2.56 f
+  ha2/U2/Y (XOR2X1)                        0.28       2.84 r
+  ha2/s (halfadder_0)                      0.00       2.84 r
+  s (out)                                  0.00       2.84 r
+  data arrival time                                   2.84
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.84
+  -----------------------------------------------------------
+  slack (MET)                                         4.19
+
+
+  Startpoint: b (input port clocked by clk)
+  Endpoint: cout (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  input external delay                     2.00       2.30 r
+  b (in)                                   0.06       2.36 r
+  U4/Y (INVX2)                             0.07       2.43 f
+  U5/Y (INVX2)                             0.10       2.53 r
+  ha1/b (halfadder_1)                      0.00       2.53 r
+  ha1/U1/Y (AND2X2)                        0.15       2.68 r
+  ha1/c (halfadder_1)                      0.00       2.68 r
+  U1/Y (OR2X2)                             0.26       2.95 r
+  cout (out)                               0.00       2.95 r
+  data arrival time                                   2.95
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.30       0.30
+  output external delay                   -1.65      -1.35
+  data required time                                 -1.35
+  -----------------------------------------------------------
+  data required time                                 -1.35
+  data arrival time                                  -2.95
+  -----------------------------------------------------------
+  slack (MET)                                         4.30
+
+
+1

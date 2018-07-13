@@ -1,0 +1,2 @@
+ Warning: Line 43 (./src/osu_scan.v), underspecified UDP (Expected "(0x)t..:.:." got "(0x)???:?:X"). (N20-1)
+ Warning: Line 43 (./src/osu_scan.v), underspecified UDP (Expected "(0x)t..:.:." got "(0x)???:?:X"). (N20-1)

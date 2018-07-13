@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mips
+Version: G-2012.06
+Date   : Tue May  1 11:30:25 2018
+****************************************
+
+
+   max_area
+
+                             Required        Actual
+   Design                      Area           Area           Slack
+   -----------------------------------------------------------------
+   mips                         0.00       359613.00      -359613.00
+                                                                    (VIOLATED)
+
+
+1

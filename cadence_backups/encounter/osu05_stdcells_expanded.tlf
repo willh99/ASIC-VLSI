@@ -1,0 +1,1871 @@
+HEADER( 
+   LIBRARY("osu_scan")
+   VENDOR("Cadence")
+   Environment("Nominal")
+   TLF_VERSION("4.4")
+   GENERATED_BY("Syn2tlfg")
+)
+// User properties section 
+   DEFINE_ATTRIBUTE(in_place_swap_mode (LIBRARY) (STRING))
+   DEFINE_ATTRIBUTE(state_variable_map (PIN) (STRING))
+   in_place_swap_mode("match_footprint")
+// model section 
+TIMING_Model(delay_template_5x5Mod 
+   (Spline
+      (INPUT_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+      (LOAD_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         data()
+   )
+)
+ENERGY_Model(energy_template_5x5Mod 
+   (Spline
+      (INPUT_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+      (LOAD_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         data()
+   )
+)
+ENERGY_Model(passive_energy_template_5x1Mod 
+   (Spline
+      (INPUT_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         data()
+   )
+)
+// properties section
+PROPERTIES(
+UNIT(
+   AREA_UNIT(1squ)
+   CAP_UNIT(1pF)
+   CONDUCTANCE_UNIT(1mS)
+   CURRENT_UNIT(1mA)
+   INDUCTANCE_UNIT(1pH)
+   RES_UNIT(1kohm)
+   TIME_UNIT(1ns)
+   TEMPERATURE_UNIT(1C)
+   VOLT_UNIT(1V)
+   POWER_UNIT(1nW)
+   PULL_RESISTANCE_UNIT(1kohm)
+)
+   Proc_Var(1.000000)
+   Voltage(5.000000)
+   Temperature(25.000000)
+   Proc_Mult(1.000000)
+   Volt_Mult(1.000000)
+   Temp_Mult(1.000000)
+   For_Pin(OUTPUT 
+      FANOUT_LIMIT(10.000000)
+      Capacitance(0.000000 RISE(0.000000) FALL(0.000000))
+   )
+   For_Pin(BIDIR 
+      FANOUT_LIMIT(10.000000)
+      INPUT_FANLOAD(0.300000)
+      Capacitance(0.006750 RISE(0.006750) FALL(0.006750))
+   )
+   For_Pin(INPUT 
+      INPUT_FANLOAD(0.300000)
+      Capacitance(0.006750 RISE(0.006750) FALL(0.006750))
+   )
+   Input_Threshold_Pct(RISE(30.000000) FALL(70.000000))
+   Output_Threshold_Pct(RISE(70.000000) FALL(30.000000))
+   Slew_Lower_Threshold_Pct(RISE(20.000000) FALL(20.000000))
+   Slew_Upper_Threshold_Pct(RISE(80.000000) FALL(80.000000))
+   Slew_Measure_Lower_Threshold_Pct(RISE(20.000000) FALL(20.000000))
+   Slew_Measure_Upper_Threshold_Pct(RISE(80.000000) FALL(80.000000))
+//PVT Conditions
+   PVT_CONDS(typical
+      VOLTAGE(5.000000)
+      PROC_VAR(1.000000)
+      TEMPERATURE(25.000000)
+   )
+DEFAULT_PVT_CONDS(typical)
+// WireLoad  Models 
+   CELL_SPOWER(0.000000)
+)
+CELL(DFFSR_SCAN 
+// model section 
+   TIMING_Model(width_template_5x1DCCellMod 
+      (Spline
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+            data()
+      )
+   )
+   TIMING_Model(hold_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(setup_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(width_template_5x1DDCellMod 
+      (Spline
+         (INPUT_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+            data()
+      )
+   )
+   TIMING_Model(recovery_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(recovery_template_5x5DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+            data()
+      )
+   )
+   TIMING_Model(removal_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(ioDelayRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (1.341640 1.482500 1.750810 2.811110 4.401330)
+                  (1.424510 1.565510 1.833830 2.894130 4.480010)
+                  (1.598390 1.739410 2.007720 3.068040 4.653920)
+                  (1.730500 1.871600 2.139830 3.200180 4.785940)
+                  (2.152540 2.293520 2.561800 3.622020 5.207870)
+               )
+      )
+   )
+   TIMING_Model(ioDelayFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (1.467980 1.606020 1.869980 2.913170 4.467210)
+                  (1.551500 1.689570 1.953480 2.996690 4.550720)
+                  (1.726370 1.864400 2.128280 3.171500 4.725450)
+                  (1.858790 1.996890 2.260810 3.304060 4.858040)
+                  (2.277150 2.415220 2.679110 3.722340 5.276290)
+               )
+      )
+   )
+   TIMING_Model(SlopeRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.177500 0.288252 0.514454 1.448150 2.863500)
+                  (0.177443 0.288368 0.514412 1.448080 2.861020)
+                  (0.177474 0.288387 0.514340 1.448070 2.861060)
+                  (0.177280 0.288419 0.514468 1.448580 2.861100)
+                  (0.177334 0.288341 0.514328 1.448050 2.861050)
+               )
+      )
+   )
+   TIMING_Model(SlopeFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.180490 0.282744 0.498631 1.407880 2.777060)
+                  (0.180733 0.282760 0.498623 1.407740 2.777020)
+                  (0.180779 0.282795 0.498634 1.407870 2.776990)
+                  (0.180738 0.282766 0.497905 1.408000 2.777160)
+                  (0.180779 0.282795 0.498635 1.407830 2.777090)
+               )
+      )
+   )
+   TIMING_Model(ioDelayRiseModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.534230 0.672010 0.940138 2.000030 3.585260)
+                  (0.607943 0.745647 1.013840 2.073810 3.659060)
+                  (0.753746 0.891089 1.159110 2.219500 3.805070)
+                  (0.860900 0.998074 1.265950 2.326350 3.912370)
+                  (1.190690 1.329470 1.597580 2.658280 4.244630)
+               )
+      )
+   )
+   TIMING_Model(ioDelayFallModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.631170 0.770480 1.036950 2.079120 3.634720)
+                  (0.715051 0.854625 1.121030 2.162910 3.718530)
+                  (0.894424 1.033720 1.299810 2.341710 3.897580)
+                  (1.031470 1.170270 1.436150 2.478570 4.034650)
+                  (1.477120 1.615420 1.880310 2.923330 4.479910)
+               )
+      )
+   )
+   TIMING_Model(SlopeRiseModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.169950 0.279679 0.509334 1.450410 2.861020)
+                  (0.169631 0.279793 0.509736 1.450390 2.860470)
+                  (0.169838 0.279954 0.509238 1.450420 2.861020)
+                  (0.171588 0.280549 0.509492 1.447570 2.861470)
+                  (0.181913 0.288163 0.513892 1.447990 2.860990)
+               )
+      )
+   )
+   TIMING_Model(SlopeFallModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.176861 0.283067 0.501851 1.409410 2.777130)
+                  (0.176926 0.283163 0.501978 1.409370 2.776870)
+                  (0.176975 0.283235 0.501924 1.409500 2.776170)
+                  (0.177212 0.283402 0.502050 1.410190 2.776570)
+                  (0.185991 0.288131 0.503473 1.409890 2.778210)
+               )
+      )
+   )
+   TIMING_Model(ioDelayRiseModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (1.070940 1.208240 1.476140 2.536530 4.122460)
+                  (1.153420 1.290710 1.558560 2.618910 4.205160)
+                  (1.328680 1.466000 1.733980 2.794440 4.380370)
+                  (1.459750 1.597090 1.864930 2.925300 4.511600)
+                  (1.866830 2.004160 2.272110 3.332680 4.918610)
+               )
+      )
+   )
+   TIMING_Model(SlopeRiseModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.173179 0.281963 0.510570 1.449170 2.861290)
+                  (0.173375 0.281992 0.510208 1.448060 2.862450)
+                  (0.173440 0.281977 0.510551 1.449180 2.861760)
+                  (0.173221 0.281907 0.510166 1.448030 2.860510)
+                  (0.173345 0.282189 0.510132 1.449790 2.861510)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.467980 1.551500 1.726370 1.858790 2.277150)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.400420 1.486500 1.667010 1.803160 2.238120)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.693750 -0.532500 -0.345000)
+                  (-0.746250 -0.585000 -0.453750)
+                  (-0.907500 -0.746250 -0.615000)
+                  (-1.005000 -0.881250 -0.693750)
+                  (-1.305000 -1.200000 -1.050000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.412500 -0.251250 -0.007500)
+                  (-0.465000 -0.303750 -0.116250)
+                  (-0.626250 -0.465000 -0.277500)
+                  (-0.761250 -0.600000 -0.412500)
+                  (-1.080000 -0.900000 -0.731250)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.832500 0.645000)
+                  (1.102500 0.941250 0.697500)
+                  (1.263750 1.046250 0.858750)
+                  (1.342500 1.181250 0.937500)
+                  (1.717500 1.500000 1.256250)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.825000 0.607500 0.420000)
+                  (0.877500 0.716250 0.472500)
+                  (1.038750 0.877500 0.633750)
+                  (1.173750 0.956250 0.768750)
+                  (1.492500 1.331250 1.087500)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.845234 0.927466 1.101450 1.234270 1.648590)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel4 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.581250 -0.798750 -1.005000)
+                  (-0.528750 -0.746250 -0.933750)
+                  (-0.423750 -0.641250 -0.885000)
+                  (-0.345000 -0.562500 -0.750000)
+                  (0.030000 -0.187500 -0.431250)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel5 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.093750 0.146250 0.307500 0.386250 0.705000)
+                  (-0.015000 0.093750 0.198750 0.333750 0.652500)
+                  (-0.120000 -0.067500 0.093750 0.228750 0.491250)
+                  (-0.255000 -0.146250 0.015000 0.093750 0.412500)
+                  (-0.517500 -0.408750 -0.247500 -0.168750 0.150000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel6 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.881250 1.042500 1.230000)
+                  (0.828750 0.990000 1.177500)
+                  (0.723750 0.941250 1.128750)
+                  (0.701250 0.862500 1.106250)
+                  (0.607500 0.768750 1.012500)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel7 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.070450 1.153250 1.328880 1.459470 1.867560)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel8 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.243750 -0.405000 -0.648750)
+                  (-0.135000 -0.296250 -0.540000)
+                  (0.026250 -0.191250 -0.378750)
+                  (0.161250 -0.056250 -0.300000)
+                  (0.536250 0.318750 0.075000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel9 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.093750 0.202500 0.307500 0.442500 0.705000)
+                  (0.041250 0.093750 0.255000 0.390000 0.652500)
+                  (-0.120000 -0.067500 0.093750 0.228750 0.491250)
+                  (-0.198750 -0.146250 0.015000 0.093750 0.412500)
+                  (-0.517500 -0.408750 -0.303750 -0.168750 0.093750)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel10 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.431250 0.592500 0.836250)
+                  (0.378750 0.540000 0.727500)
+                  (0.217500 0.378750 0.566250)
+                  (0.082500 0.243750 0.487500)
+                  (-0.236250 -0.075000 0.168750)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel11 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.581250 -0.420000 -0.232500)
+                  (-0.633750 -0.528750 -0.341250)
+                  (-0.795000 -0.633750 -0.502500)
+                  (-0.930000 -0.768750 -0.581250)
+                  (-1.230000 -1.050000 -0.900000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel11 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.300000 -0.138750 0.048750)
+                  (-0.408750 -0.247500 -0.003750)
+                  (-0.570000 -0.408750 -0.165000)
+                  (-0.648750 -0.487500 -0.300000)
+                  (-1.005000 -0.825000 -0.618750)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel12 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.888750 0.645000)
+                  (1.158750 0.941250 0.753750)
+                  (1.320000 1.102500 0.915000)
+                  (1.455000 1.237500 1.050000)
+                  (1.830000 1.612500 1.425000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel12 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.275000 1.113750 0.870000)
+                  (1.383750 1.166250 0.978750)
+                  (1.545000 1.383750 1.140000)
+                  (1.680000 1.462500 1.275000)
+                  (2.055000 1.893750 1.650000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel13 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.693750 -0.532500 -0.345000)
+                  (-0.746250 -0.585000 -0.453750)
+                  (-0.907500 -0.746250 -0.558750)
+                  (-1.005000 -0.881250 -0.693750)
+                  (-1.305000 -1.200000 -1.050000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel13 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.412500 -0.251250 -0.063750)
+                  (-0.521250 -0.360000 -0.116250)
+                  (-0.626250 -0.465000 -0.277500)
+                  (-0.761250 -0.600000 -0.412500)
+                  (-1.080000 -0.900000 -0.731250)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel14 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.832500 0.588750)
+                  (1.102500 0.885000 0.697500)
+                  (1.263750 1.046250 0.858750)
+                  (1.342500 1.181250 0.937500)
+                  (1.717500 1.500000 1.256250)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel14 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.825000 0.663750 0.420000)
+                  (0.933750 0.716250 0.528750)
+                  (1.038750 0.877500 0.633750)
+                  (1.173750 1.012500 0.768750)
+                  (1.492500 1.331250 1.087500)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.045840 1.027370 1.009570 1.007830 1.014690)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.417040 2.400170 2.386060 2.382680 2.378440)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.476940 1.460020 1.447510 1.443330 1.443620)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.049190 2.040720 2.034060 2.030690 2.026680)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (3.114080 3.435420 4.071130 6.585660 10.340900)
+                  (3.093000 3.415510 4.051400 6.565940 10.321200)
+                  (3.071010 3.393590 4.029500 6.544010 10.299200)
+                  (3.077540 3.398900 4.034470 6.548890 10.304000)
+                  (3.074530 3.395800 4.031040 6.545640 10.300700)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (2.362830 2.063710 1.454300 1.026670 4.770690)
+                  (2.342590 2.043430 1.433960 1.046980 4.791880)
+                  (2.326200 2.026970 1.417330 1.063710 4.807820)
+                  (2.322440 2.023320 1.414080 1.066840 4.811500)
+                  (2.338500 2.039390 1.429820 1.051430 4.794820)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.822302 1.146490 1.783340 4.296010 8.048370)
+                  (0.806047 1.129830 1.766450 4.278750 8.032380)
+                  (0.775884 1.098440 1.734720 4.248530 8.002550)
+                  (0.770716 1.092660 1.728770 4.243460 7.998590)
+                  (0.784245 1.106090 1.739740 4.255640 8.012750)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (2.536620 2.238240 1.629310 0.953276 4.596460)
+                  (2.501690 2.202800 1.593620 0.935085 4.631570)
+                  (2.474140 2.173910 1.563610 0.927448 4.660720)
+                  (2.469230 2.167790 1.556710 0.922903 4.664630)
+                  (2.495060 2.189830 1.578130 0.899662 4.639010)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel4 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (3.149040 3.470690 4.106440 6.620940 10.376400)
+                  (3.101800 3.423140 4.058830 6.573430 10.328900)
+                  (3.074910 3.396510 4.032400 6.547530 10.302500)
+                  (3.066610 3.387900 4.023600 6.538250 10.292800)
+                  (3.083350 3.404610 4.040300 6.555160 10.310500)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel5 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.705245 0.705282 0.705225 0.705272 0.704973)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel5 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.706831 0.706517 0.706450 0.706841 0.706862)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel6 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.707812 0.707978 0.707771 0.707892 0.707848)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel6 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.708694 0.708429 0.708456 0.708540 0.708333)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel7 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.649520 1.645860 1.630960 1.615990 1.593510)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel7 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.717140 2.694890 2.671400 2.657880 2.637540)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel8 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.370400 1.354800 1.341790 1.338050 1.339020)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel8 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.158600 2.151220 2.142710 2.140170 2.135770)
+               )
+      )
+   )
+// properties section 
+   Area(2160.000000)
+   CELL_SPOWER(0.303882)
+   PIN(CLK
+      PINTYPE(INPUT )
+      CLOCK_PIN
+// properties section 
+      Capacitance(0.020896 RISE(0.020896) FALL(0.020887))
+      INTERNAL_ENERGY(RISE(PowerRiseModel0) FALL(PowerFallModel0))
+   )
+
+   PIN(D
+      PINTYPE(INPUT )
+// properties section 
+      Capacitance(0.033427 RISE(0.033427) FALL(0.032674))
+      INTERNAL_ENERGY(RISE(PowerRiseModel1) FALL(PowerFallModel1))
+   )
+
+   PIN(Q
+      PINTYPE(OUTPUT )
+      state_variable_map("N0")
+      SCAN_PINTYPE(Output )
+// properties section 
+      Capacitance(0.000000 RISE(0.000000) FALL(0.000000))
+      Load_Limit(0.248036)
+   )
+
+   PIN(R
+      PINTYPE(INPUT )
+// properties section 
+      Capacitance(0.054662 RISE(0.054662) FALL(0.054271))
+      INTERNAL_ENERGY(RISE(PowerRiseModel5) FALL(PowerFallModel5))
+   )
+
+   PIN(S
+      PINTYPE(INPUT )
+// properties section 
+      Capacitance(0.050434 RISE(0.049459) FALL(0.050434))
+      INTERNAL_ENERGY(RISE(PowerRiseModel6) FALL(PowerFallModel6))
+   )
+
+   PIN(TE
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Enable )
+// properties section 
+      Capacitance(0.052854 RISE(0.052408) FALL(0.052854))
+      INTERNAL_ENERGY(RISE(PowerRiseModel7) FALL(PowerFallModel7))
+   )
+
+   PIN(TI
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Input )
+// properties section 
+      Capacitance(0.032973 RISE(0.032973) FALL(0.032196))
+      INTERNAL_ENERGY(RISE(PowerRiseModel8) FALL(PowerFallModel8))
+   )
+
+   REGISTER( 
+      CLOCK(CLK)
+      INPUT(((TE&TI)|(~TE&D)))
+      OUTPUT(Q)
+      SET((~S))
+      CLEAR((~R))
+      CLEAR_PRESET_VAR1(0)
+   )
+
+   TEST_REGISTER( 
+      CLOCK(CLK)
+      INPUT(D)
+      OUTPUT(Q)
+   )
+
+// pinrels
+Path( CLK => Q 01 01 QUALIFIER(TRIGGER) DELAY(ioDelayRiseModel0) SLEW(SlopeRiseModel0) )
+Path( CLK => Q 01 10 QUALIFIER(TRIGGER) DELAY(ioDelayFallModel0) SLEW(SlopeFallModel0) )
+Path( R => Q 01 01 QUALIFIER(CLEAR) DELAY(ioDelayRiseModel1) SLEW(SlopeRiseModel1) )
+Path( R => Q 10 10 QUALIFIER(CLEAR) DELAY(ioDelayFallModel1) SLEW(SlopeFallModel1) )
+Path( S => Q 10 01 QUALIFIER(SET) DELAY(ioDelayRiseModel2) SLEW(SlopeRiseModel2) )
+MPWH( CLK COND(~D&R&S&~TE&~TI) SDF_COND(D_EQ_0_AN_R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkRiseModel0 )
+MPWL( CLK COND(~D&R&S&~TE&~TI) SDF_COND(D_EQ_0_AN_R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkFallModel0 )
+Hold( D => CLK 01 posedge COND(R&S&~TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0==1'b1) TchkRiseModel1 )
+Setup( D => CLK 01 posedge COND(R&S&~TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0==1'b1) TchkRiseModel2 )
+Hold( D => CLK 10 posedge COND(R&S&~TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0==1'b1) TchkFallModel1 )
+Setup( D => CLK 10 posedge COND(R&S&~TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_0==1'b1) TchkFallModel2 )
+MPWL( R COND(~D&~S&~TE&~TI) SDF_COND(D_EQ_0_AN_S_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkFallModel3 )
+Recovery( R => CLK 01 posedge COND(S) SDF_COND(S==1'b1) TchkRiseModel4 )
+Removal( R => CLK 01 posedge COND(S) SDF_COND(S==1'b1) TchkRiseModel6 )
+Recovery( R => S 01 posedge COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkRiseModel5 )
+MPWL( S COND(~D&R&~TE&~TI) SDF_COND(D_EQ_0_AN_R_EQ_1_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkFallModel7 )
+Recovery( S => CLK 01 posedge COND(R) SDF_COND(R==1'b1) TchkRiseModel8 )
+Removal( S => CLK 01 posedge COND(R) SDF_COND(R==1'b1) TchkRiseModel10 )
+Recovery( S => R 01 posedge COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkRiseModel9 )
+Hold( TE => CLK 01 posedge COND(R&S) SDF_COND(R_EQ_1_AN_S_EQ_1==1'b1) TchkRiseModel11 )
+Setup( TE => CLK 01 posedge COND(R&S) SDF_COND(R_EQ_1_AN_S_EQ_1==1'b1) TchkRiseModel12 )
+Hold( TE => CLK 10 posedge COND(R&S) SDF_COND(R_EQ_1_AN_S_EQ_1==1'b1) TchkFallModel11 )
+Setup( TE => CLK 10 posedge COND(R&S) SDF_COND(R_EQ_1_AN_S_EQ_1==1'b1) TchkFallModel12 )
+Hold( TI => CLK 01 posedge COND(R&S&TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_1==1'b1) TchkRiseModel13 )
+Setup( TI => CLK 01 posedge COND(R&S&TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_1==1'b1) TchkRiseModel14 )
+Hold( TI => CLK 10 posedge COND(R&S&TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_1==1'b1) TchkFallModel13 )
+Setup( TI => CLK 10 posedge COND(R&S&TE) SDF_COND(R_EQ_1_AN_S_EQ_1_AN_TE_EQ_1==1'b1) TchkFallModel14 )
+
+// powerSI arc
+   PATH(CLK => Q 01 01 
+      INTERNAL_ENERGY(PowerRiseModel2)
+   )
+   PATH(CLK => Q 01 10 
+      INTERNAL_ENERGY(PowerFallModel2)
+   )
+   PATH(R => Q 10 01 
+      INTERNAL_ENERGY(PowerRiseModel3)
+   )
+   PATH(R => Q 10 10 
+      INTERNAL_ENERGY(PowerFallModel3)
+   )
+   PATH(S => Q 10 01 
+      INTERNAL_ENERGY(PowerRiseModel4)
+   )
+   PATH(S => Q 10 10 
+      INTERNAL_ENERGY(Const(0.000000))
+   )
+)
+
+CELL(DFFPOSX1_SCAN 
+// model section 
+   TIMING_Model(width_template_5x1DCCellMod 
+      (Spline
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+            data()
+      )
+   )
+   TIMING_Model(hold_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(setup_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(ioDelayRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.575573 0.650736 0.787988 1.307810 2.078250)
+                  (0.656335 0.731435 0.868612 1.388270 2.158970)
+                  (0.822389 0.897283 1.033910 1.553240 2.324170)
+                  (0.949110 1.023710 1.160160 1.679280 2.450270)
+                  (1.343020 1.419230 1.556140 2.073630 2.844200)
+               )
+      )
+   )
+   TIMING_Model(ioDelayFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.838273 0.916745 1.057300 1.569790 2.322700)
+                  (0.920588 0.999194 1.139710 1.652620 2.405600)
+                  (1.081500 1.160190 1.300280 1.813050 2.566030)
+                  (1.190230 1.268990 1.409310 1.922120 2.675070)
+                  (1.512340 1.591330 1.731820 2.244600 2.997480)
+               )
+      )
+   )
+   TIMING_Model(SlopeRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.162065 0.211812 0.313365 0.750966 1.432020)
+                  (0.162197 0.211808 0.313297 0.751084 1.432080)
+                  (0.162219 0.211987 0.313526 0.751054 1.432080)
+                  (0.163076 0.212545 0.313930 0.751118 1.432130)
+                  (0.183996 0.229534 0.325022 0.753146 1.432210)
+               )
+      )
+   )
+   TIMING_Model(SlopeFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.168643 0.219515 0.319308 0.735085 1.387090)
+                  (0.168276 0.219544 0.319336 0.735106 1.387100)
+                  (0.168276 0.219838 0.319616 0.735218 1.387110)
+                  (0.168132 0.219721 0.319396 0.735100 1.387150)
+                  (0.166873 0.218793 0.319384 0.735144 1.387170)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.838273 0.920588 1.081500 1.190230 1.512340)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.746640 0.832807 1.003330 1.118970 1.457280)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.750000 -0.588750 -0.401250)
+                  (-0.802500 -0.697500 -0.510000)
+                  (-0.963750 -0.858750 -0.671250)
+                  (-1.080000 -0.937500 -0.750000)
+                  (-1.380000 -1.275000 -1.050000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.806250 -0.813750 -0.851250)
+                  (-0.915000 -0.922500 -0.903750)
+                  (-1.020000 -1.027500 -1.065000)
+                  (-1.155000 -1.125000 -1.200000)
+                  (-1.455000 -1.500000 -1.500000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.162500 1.057500 0.870000)
+                  (1.271250 1.110000 0.922500)
+                  (1.376250 1.271250 1.083750)
+                  (1.511250 1.350000 1.218750)
+                  (1.830000 1.725000 1.537500)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.945000 0.926250)
+                  (1.102500 1.053750 1.035000)
+                  (1.263750 1.215000 1.196250)
+                  (1.398750 1.293750 1.275000)
+                  (1.717500 1.668750 1.650000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel3 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.637500 -0.476250 -0.288750)
+                  (-0.690000 -0.585000 -0.397500)
+                  (-0.851250 -0.746250 -0.558750)
+                  (-1.005000 -0.825000 -0.637500)
+                  (-1.305000 -1.125000 -0.975000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel3 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.693750 -0.701250 -0.738750)
+                  (-0.802500 -0.810000 -0.847500)
+                  (-0.963750 -0.971250 -1.008750)
+                  (-1.080000 -1.050000 -1.087500)
+                  (-1.380000 -1.350000 -1.425000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel4 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-1.031250 -1.038750 -1.076250)
+                  (-1.140000 -1.147500 -1.185000)
+                  (-1.320000 -1.290000 -1.290000)
+                  (-1.455000 -1.425000 -1.425000)
+                  (-1.830000 -1.800000 -1.800000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel4 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-1.031250 -0.870000 -0.682500)
+                  (-1.083750 -0.978750 -0.791250)
+                  (-1.245000 -1.140000 -0.952500)
+                  (-1.380000 -1.275000 -1.087500)
+                  (-1.755000 -1.650000 -1.425000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel5 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.888750 0.757500)
+                  (1.158750 0.997500 0.866250)
+                  (1.320000 1.158750 0.971250)
+                  (1.398750 1.237500 1.106250)
+                  (1.717500 1.556250 1.425000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel5 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.937500 0.888750 0.870000)
+                  (1.046250 0.941250 0.922500)
+                  (1.207500 1.102500 1.083750)
+                  (1.286250 1.237500 1.218750)
+                  (1.605000 1.556250 1.537500)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel6 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.275000 1.226250 1.207500)
+                  (1.383750 1.278750 1.260000)
+                  (1.545000 1.440000 1.421250)
+                  (1.680000 1.575000 1.556250)
+                  (2.055000 1.950000 1.931250)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel6 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.443750 1.282500 1.151250)
+                  (1.496250 1.391250 1.203750)
+                  (1.713750 1.552500 1.365000)
+                  (1.792500 1.687500 1.500000)
+                  (2.223750 2.062500 1.931250)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel7 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.750000 -0.588750 -0.401250)
+                  (-0.802500 -0.697500 -0.510000)
+                  (-0.963750 -0.802500 -0.615000)
+                  (-1.080000 -0.937500 -0.750000)
+                  (-1.380000 -1.275000 -1.050000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel7 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.806250 -0.813750 -0.851250)
+                  (-0.915000 -0.922500 -0.960000)
+                  (-1.020000 -1.083750 -1.065000)
+                  (-1.155000 -1.125000 -1.200000)
+                  (-1.530000 -1.500000 -1.500000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel8 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.162500 1.001250 0.870000)
+                  (1.215000 1.110000 0.922500)
+                  (1.376250 1.271250 1.083750)
+                  (1.511250 1.350000 1.218750)
+                  (1.830000 1.668750 1.537500)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel8 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 1.001250 0.982500)
+                  (1.158750 1.053750 1.035000)
+                  (1.263750 1.215000 1.196250)
+                  (1.398750 1.293750 1.331250)
+                  (1.717500 1.668750 1.650000)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.253196 0.292363 0.300969 0.299294 0.263829)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.041620 2.007730 2.002400 2.007840 2.038190)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.094550 1.078050 1.065290 1.061340 1.061080)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.729770 1.721270 1.715410 1.711780 1.708060)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.911139 1.235360 1.881640 4.421590 8.189470)
+                  (0.862099 1.186460 1.831620 4.371320 8.140100)
+                  (0.847121 1.169270 1.811750 4.349000 8.119660)
+                  (0.834210 1.155820 1.796250 4.331850 8.104020)
+                  (0.897419 1.212020 1.844460 4.374580 8.147250)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.464737 0.158130 0.444528 2.899340 6.624020)
+                  (0.410715 0.110372 0.492163 2.946900 6.671440)
+                  (0.390951 0.089443 0.515809 2.971200 6.695890)
+                  (0.378261 0.077364 0.526496 2.980850 6.705530)
+                  (0.401023 0.104244 0.501999 2.958290 6.683590)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.330130 1.326830 1.311680 1.294760 1.275300)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.334940 2.312840 2.289530 2.275810 2.255630)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel4 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.987285 0.972655 0.959525 0.955729 0.955212)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel4 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.839050 1.830890 1.823110 1.820780 1.816790)
+               )
+      )
+   )
+// properties section 
+   Area(1440.000000)
+   CELL_SPOWER(0.192939)
+   PIN(CLK
+      PINTYPE(INPUT )
+      CLOCK_PIN
+// properties section 
+      Capacitance(0.072281 RISE(0.071748) FALL(0.072281))
+      INTERNAL_ENERGY(RISE(PowerRiseModel0) FALL(PowerFallModel0))
+   )
+
+   PIN(D
+      PINTYPE(INPUT )
+// properties section 
+      Capacitance(0.033427 RISE(0.033427) FALL(0.032674))
+      INTERNAL_ENERGY(RISE(PowerRiseModel1) FALL(PowerFallModel1))
+   )
+
+   PIN(Q
+      PINTYPE(OUTPUT )
+      state_variable_map("DS0000")
+      SCAN_PINTYPE(Output )
+// properties section 
+      Capacitance(0.000000 RISE(0.000000) FALL(0.000000))
+      Load_Limit(0.552472)
+   )
+
+   PIN(TE
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Enable )
+// properties section 
+      Capacitance(0.052853 RISE(0.052412) FALL(0.052853))
+      INTERNAL_ENERGY(RISE(PowerRiseModel3) FALL(PowerFallModel3))
+   )
+
+   PIN(TI
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Input )
+// properties section 
+      Capacitance(0.032949 RISE(0.032949) FALL(0.032196))
+      INTERNAL_ENERGY(RISE(PowerRiseModel4) FALL(PowerFallModel4))
+   )
+
+   REGISTER( 
+      CLOCK(CLK)
+      INPUT(((TE&TI)|(~TE&D)))
+      OUTPUT(Q)
+   )
+
+   TEST_REGISTER( 
+      CLOCK(CLK)
+      INPUT(D)
+      OUTPUT(Q)
+   )
+
+// pinrels
+Path( CLK => Q 01 01 QUALIFIER(TRIGGER) DELAY(ioDelayRiseModel0) SLEW(SlopeRiseModel0) )
+Path( CLK => Q 01 10 QUALIFIER(TRIGGER) DELAY(ioDelayFallModel0) SLEW(SlopeFallModel0) )
+MPWH( CLK COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkRiseModel0 )
+MPWL( CLK COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkFallModel0 )
+Hold( D => CLK 01 posedge COND(~TE) SDF_COND(TE==1'b0) TchkRiseModel1 )
+Setup( D => CLK 01 posedge COND(~TE) SDF_COND(TE==1'b0) TchkRiseModel2 )
+Hold( D => CLK 10 posedge COND(~TE) SDF_COND(TE==1'b0) TchkFallModel1 )
+Setup( D => CLK 10 posedge COND(~TE) SDF_COND(TE==1'b0) TchkFallModel2 )
+Hold( TE => CLK 01 posedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkRiseModel3 )
+Setup( TE => CLK 01 posedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkRiseModel5 )
+Hold( TE => CLK 01 posedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkRiseModel4 )
+Setup( TE => CLK 01 posedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkRiseModel6 )
+Hold( TE => CLK 10 posedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkFallModel3 )
+Setup( TE => CLK 10 posedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkFallModel5 )
+Hold( TE => CLK 10 posedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkFallModel4 )
+Setup( TE => CLK 10 posedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkFallModel6 )
+Hold( TI => CLK 01 posedge COND(TE) SDF_COND(TE==1'b1) TchkRiseModel7 )
+Setup( TI => CLK 01 posedge COND(TE) SDF_COND(TE==1'b1) TchkRiseModel8 )
+Hold( TI => CLK 10 posedge COND(TE) SDF_COND(TE==1'b1) TchkFallModel7 )
+Setup( TI => CLK 10 posedge COND(TE) SDF_COND(TE==1'b1) TchkFallModel8 )
+
+// powerSI arc
+   PATH(CLK => Q 01 01 
+      INTERNAL_ENERGY(PowerRiseModel2)
+   )
+   PATH(CLK => Q 01 10 
+      INTERNAL_ENERGY(PowerFallModel2)
+   )
+)
+
+CELL(DFFNEGX1_SCAN 
+// model section 
+   TIMING_Model(width_template_5x1DCCellMod 
+      (Spline
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+            data()
+      )
+   )
+   TIMING_Model(hold_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(setup_template_5x3DCCellMod 
+      (Spline
+         (SLEW_AXIS 1000.000000 1001.000000 1002.000000 1003.000000 1004.000000)
+         (CLOCK_SLEW_AXIS 1000.000000 1001.000000 1002.000000)
+            data()
+      )
+   )
+   TIMING_Model(ioDelayRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.733150 0.808319 0.945143 1.463970 2.234890)
+                  (0.823339 0.898664 1.035120 1.553800 2.324600)
+                  (0.999197 1.074250 1.211200 1.730080 2.500780)
+                  (1.114310 1.189370 1.326130 1.845040 2.615830)
+                  (1.446660 1.521550 1.658450 2.177750 2.948340)
+               )
+      )
+   )
+   TIMING_Model(ioDelayFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.643405 0.722586 0.863298 1.376670 2.129830)
+                  (0.719492 0.798143 0.938767 1.452240 2.205290)
+                  (0.885159 0.963808 1.104090 1.617010 2.370110)
+                  (1.013970 1.092610 1.232430 1.745280 2.498530)
+                  (1.431840 1.511040 1.651070 2.163070 2.915870)
+               )
+      )
+   )
+   TIMING_Model(SlopeRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.164260 0.214040 0.315323 0.751917 1.432600)
+                  (0.164316 0.214175 0.315357 0.751975 1.432510)
+                  (0.164414 0.213996 0.315322 0.751921 1.432510)
+                  (0.164307 0.214035 0.315244 0.751830 1.432640)
+                  (0.163017 0.212657 0.314893 0.752115 1.432600)
+               )
+      )
+   )
+   TIMING_Model(SlopeFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (0.166996 0.218391 0.318131 0.734565 1.387010)
+                  (0.167031 0.218233 0.318079 0.734487 1.386930)
+                  (0.166932 0.218187 0.318257 0.734583 1.386940)
+                  (0.167130 0.218603 0.318500 0.734660 1.386950)
+                  (0.181473 0.230307 0.326650 0.736897 1.387330)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.740133 0.822328 0.978202 1.081400 1.399970)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel0 
+      (Spline
+         (CLOCK_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.643405 0.719492 0.885159 1.013970 1.431840)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.806250 -0.813750 -0.851250)
+                  (-0.915000 -0.866250 -0.903750)
+                  (-1.020000 -1.027500 -1.065000)
+                  (-1.155000 -1.125000 -1.200000)
+                  (-1.455000 -1.500000 -1.500000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel1 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.750000 -0.645000 -0.457500)
+                  (-0.858750 -0.697500 -0.510000)
+                  (-1.020000 -0.858750 -0.671250)
+                  (-1.080000 -0.937500 -0.806250)
+                  (-1.455000 -1.275000 -1.125000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 1.001250 0.982500)
+                  (1.158750 1.053750 1.035000)
+                  (1.320000 1.215000 1.196250)
+                  (1.398750 1.293750 1.275000)
+                  (1.717500 1.668750 1.650000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel2 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.218750 1.057500 0.926250)
+                  (1.271250 1.166250 0.978750)
+                  (1.432500 1.327500 1.140000)
+                  (1.567500 1.406250 1.275000)
+                  (1.886250 1.781250 1.593750)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel3 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.693750 -0.701250 -0.738750)
+                  (-0.802500 -0.810000 -0.791250)
+                  (-0.963750 -0.915000 -0.952500)
+                  (-1.005000 -1.050000 -1.087500)
+                  (-1.380000 -1.350000 -1.350000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel3 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.637500 -0.532500 -0.345000)
+                  (-0.746250 -0.585000 -0.453750)
+                  (-0.907500 -0.746250 -0.615000)
+                  (-1.005000 -0.881250 -0.693750)
+                  (-1.305000 -1.200000 -1.050000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel4 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.975000 -0.870000 -0.682500)
+                  (-1.083750 -0.922500 -0.791250)
+                  (-1.245000 -1.083750 -0.952500)
+                  (-1.380000 -1.200000 -1.087500)
+                  (-1.755000 -1.575000 -1.425000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel4 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-1.087500 -1.095000 -1.076250)
+                  (-1.140000 -1.147500 -1.185000)
+                  (-1.320000 -1.290000 -1.365000)
+                  (-1.455000 -1.425000 -1.500000)
+                  (-1.830000 -1.875000 -1.875000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel5 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (0.937500 0.832500 0.813750)
+                  (1.046250 0.941250 0.922500)
+                  (1.207500 1.102500 1.083750)
+                  (1.286250 1.181250 1.162500)
+                  (1.605000 1.500000 1.481250)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel5 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.106250 1.001250 0.813750)
+                  (1.215000 1.053750 0.922500)
+                  (1.376250 1.215000 1.083750)
+                  (1.455000 1.350000 1.162500)
+                  (1.773750 1.668750 1.481250)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel6 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.443750 1.282500 1.151250)
+                  (1.552500 1.391250 1.260000)
+                  (1.713750 1.552500 1.421250)
+                  (1.848750 1.687500 1.500000)
+                  (2.223750 2.062500 1.931250)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel6 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.331250 1.226250 1.207500)
+                  (1.383750 1.335000 1.316250)
+                  (1.601250 1.496250 1.477500)
+                  (1.736250 1.631250 1.612500)
+                  (2.111250 2.006250 1.987500)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel7 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.806250 -0.813750 -0.851250)
+                  (-0.915000 -0.866250 -0.903750)
+                  (-1.020000 -1.027500 -1.065000)
+                  (-1.155000 -1.125000 -1.143750)
+                  (-1.455000 -1.500000 -1.500000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel7 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (-0.750000 -0.645000 -0.457500)
+                  (-0.858750 -0.697500 -0.566250)
+                  (-1.020000 -0.858750 -0.671250)
+                  (-1.080000 -0.993750 -0.806250)
+                  (-1.455000 -1.275000 -1.125000)
+               )
+      )
+   )
+   TIMING_Model(TchkRiseModel8 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.050000 0.945000 0.926250)
+                  (1.158750 1.053750 1.035000)
+                  (1.263750 1.215000 1.196250)
+                  (1.398750 1.293750 1.275000)
+                  (1.717500 1.612500 1.650000)
+               )
+      )
+   )
+   TIMING_Model(TchkFallModel8 
+      (Spline
+         (SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (CLOCK_SLEW_AXIS 0.060000 0.300000 0.600000)
+            data
+               (
+                  (1.218750 1.057500 0.926250)
+                  (1.327500 1.166250 0.978750)
+                  (1.432500 1.327500 1.140000)
+                  (1.567500 1.406250 1.275000)
+                  (1.886250 1.781250 1.593750)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.567700 0.537980 0.502106 0.497561 0.522800)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel0 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.612700 1.578670 1.580890 1.604620 1.646170)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.088310 1.055780 1.030130 1.022650 1.023500)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel1 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.370160 2.353650 2.340370 2.333590 2.326120)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (2.849720 3.173410 3.812120 6.342360 10.112900)
+                  (2.830200 3.150810 3.789360 6.319110 10.089200)
+                  (2.837870 3.158620 3.797800 6.328780 10.098200)
+                  (2.839630 3.160900 3.796970 6.331670 10.101000)
+                  (2.876150 3.200160 3.835190 6.372490 10.140700)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel2 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+         (LOAD_AXIS 0.025000 0.050000 0.100000 0.300000 0.600000)
+            data
+               (
+                  (2.136330 1.838860 1.240430 1.207660 4.933420)
+                  (2.088010 1.790470 1.190900 1.257680 4.983180)
+                  (2.081500 1.782370 1.179170 1.271190 4.995140)
+                  (2.085480 1.783880 1.180130 1.273200 4.995650)
+                  (2.098420 1.794290 1.183780 1.273140 4.997400)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.376360 1.373060 1.358040 1.341190 1.321580)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel3 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (2.295000 2.272010 2.259350 2.259620 2.288430)
+               )
+      )
+   )
+   ENERGY_Model(PowerRiseModel4 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (0.938980 0.924528 0.911271 0.907270 0.906916)
+               )
+      )
+   )
+   ENERGY_Model(PowerFallModel4 
+      (Spline
+         (INPUT_SLEW_AXIS 0.060000 0.180000 0.420000 0.600000 1.200000)
+            data
+               (
+                  (1.885340 1.877190 1.869930 1.867110 1.863870)
+               )
+      )
+   )
+// properties section 
+   Area(1440.000000)
+   CELL_SPOWER(0.193090)
+   PIN(CLK
+      PINTYPE(INPUT )
+      CLOCK_PIN
+// properties section 
+      Capacitance(0.076650 RISE(0.076149) FALL(0.076650))
+      INTERNAL_ENERGY(RISE(PowerRiseModel0) FALL(PowerFallModel0))
+   )
+
+   PIN(D
+      PINTYPE(INPUT )
+// properties section 
+      Capacitance(0.035440 RISE(0.035343) FALL(0.035440))
+      INTERNAL_ENERGY(RISE(PowerRiseModel1) FALL(PowerFallModel1))
+   )
+
+   PIN(Q
+      PINTYPE(OUTPUT )
+      state_variable_map("N0")
+      SCAN_PINTYPE(Output )
+// properties section 
+      Capacitance(0.000000 RISE(0.000000) FALL(0.000000))
+      Load_Limit(0.554609)
+   )
+
+   PIN(TE
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Enable )
+// properties section 
+      Capacitance(0.052853 RISE(0.052412) FALL(0.052853))
+      INTERNAL_ENERGY(RISE(PowerRiseModel3) FALL(PowerFallModel3))
+   )
+
+   PIN(TI
+      PINTYPE(INPUT )
+      SCAN_PINTYPE(Input )
+// properties section 
+      Capacitance(0.032949 RISE(0.032949) FALL(0.032196))
+      INTERNAL_ENERGY(RISE(PowerRiseModel4) FALL(PowerFallModel4))
+   )
+
+   REGISTER( 
+      CLOCK((~CLK))
+      INPUT(((TE&TI)|(~TE&D)))
+      OUTPUT(Q)
+   )
+
+   TEST_REGISTER( 
+      CLOCK((~CLK))
+      INPUT(D)
+      OUTPUT(Q)
+   )
+
+// pinrels
+Path( CLK => Q 10 01 QUALIFIER(TRIGGER) DELAY(ioDelayRiseModel0) SLEW(SlopeRiseModel0) )
+Path( CLK => Q 10 10 QUALIFIER(TRIGGER) DELAY(ioDelayFallModel0) SLEW(SlopeFallModel0) )
+MPWH( CLK COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkRiseModel0 )
+MPWL( CLK COND(~D&~TE&~TI) SDF_COND(D_EQ_0_AN_TE_EQ_0_AN_TI_EQ_0==1'b1) TchkFallModel0 )
+Hold( D => CLK 01 negedge COND(~TE) SDF_COND(TE==1'b0) TchkRiseModel1 )
+Setup( D => CLK 01 negedge COND(~TE) SDF_COND(TE==1'b0) TchkRiseModel2 )
+Hold( D => CLK 10 negedge COND(~TE) SDF_COND(TE==1'b0) TchkFallModel1 )
+Setup( D => CLK 10 negedge COND(~TE) SDF_COND(TE==1'b0) TchkFallModel2 )
+Hold( TE => CLK 01 negedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkRiseModel3 )
+Setup( TE => CLK 01 negedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkRiseModel5 )
+Hold( TE => CLK 01 negedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkRiseModel4 )
+Setup( TE => CLK 01 negedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkRiseModel6 )
+Hold( TE => CLK 10 negedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkFallModel3 )
+Setup( TE => CLK 10 negedge COND(~D&TI) SDF_COND(D_EQ_0_AN_TI_EQ_1==1'b1) TchkFallModel5 )
+Hold( TE => CLK 10 negedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkFallModel4 )
+Setup( TE => CLK 10 negedge COND(D&~TI) SDF_COND(D_EQ_1_AN_TI_EQ_0==1'b1) TchkFallModel6 )
+Hold( TI => CLK 01 negedge COND(TE) SDF_COND(TE==1'b1) TchkRiseModel7 )
+Setup( TI => CLK 01 negedge COND(TE) SDF_COND(TE==1'b1) TchkRiseModel8 )
+Hold( TI => CLK 10 negedge COND(TE) SDF_COND(TE==1'b1) TchkFallModel7 )
+Setup( TI => CLK 10 negedge COND(TE) SDF_COND(TE==1'b1) TchkFallModel8 )
+
+// powerSI arc
+   PATH(CLK => Q 10 01 
+      INTERNAL_ENERGY(PowerRiseModel2)
+   )
+   PATH(CLK => Q 10 10 
+      INTERNAL_ENERGY(PowerFallModel2)
+   )
+)
+

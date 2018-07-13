@@ -1,0 +1,93 @@
+###### STIL2VERILOG CONFIGURATION FILE TEMPLATE (go-nogo default values) #####
+
+# uncomment out the setting statement to use predefined variables
+
+##### variables to define test bench default values
+
+# cfg_patterns_read_interval: specifies the maximum number of patterns loaded simultaneously in the simulation process
+#set cfg_patterns_read_interval 1000
+
+# cfg_patterns_report_interval: Specifies the interval of the progress message
+#set cfg_patterns_report_interval 5
+
+#  cfg_message_verbosity_level: control for a pre-specified set of trace options
+#set cfg_message_verbosity_level 0
+
+# cfg_evcd_file evcd_file: generates an extended-VCD of the simulation run
+#set cfg_evcd_file "evcd_file"
+
+# cfg_diag_file: generates a failures log file compliant with TetraMAX diagnostics
+#set cfg_diag_file "diag_file"
+
+# cfg_serial_timing: generates a delay for parallel scan access to align parallel load timing with serial load timing
+#set cfg_serial_timing 0
+
+# cfg_time_unit: specifies the simulation time unit
+#set cfg_time_unit "1ns"
+
+# cfg_time_precision: specifies the simulation time precision
+#set cfg_time_precision "1ns"
+
+# cfg_dut_module_name: specifies the DUT module name to be tested (variable to be used only when the tool asks for it)
+#set cfg_dut_module_name "mips"
+
+# cfg_tb_module_name: specifies the test bench top level module name
+#set cfg_tb_module_name "tbench_module_name"
+
+# cfg_parallel_stil_report_cell_name: when 1 it enables the reporting of the failing scan cell names during simulation of a parallel formatted STIL (0 is default value)
+#set cfg_parallel_stil_report_cell_name 0
+
+# cfg_parallel_release_time: delay (or advance if negative) the release of the parallel by t time starting from the beginning of next cycle. Default is 0, meaning that the release is done at the end of the current cycle.
+#set cfg_parallel_release_time "0.00ns"
+
+##### variables to generate simulator script
+
+# define_<preprocessor_define>: specifies the preprocessor definitions for the simulator
+#set define_<user_def1> 0
+#set define_<user_def2> "TRUE"
+
+# design_files: specifies all source files required to run the simulation
+#    Multiple files are specified in double quotes separated by space. E.g.: "file1.v file2.v ..."
+#    Wild-card character (*) is supported. E.g., "dir1/*.v dir2/*/*.v"
+#set design_files "netlist1.v designs/*.v"
+
+# lib_files: specifies all library source files required to run the simulation
+#    Multiple files are specified in double quotes separated by space. E.g.: "file1.v file2.v ..."
+#    Wild-card character (*) is supported. E.g., "dir1/*.v dir2/*/*.v"
+#set lib_files "lib1.v libs/*.v"
+
+# vcs_options: specifies the user VCS command line options
+#set vcs_options "VCSoption1 VCSoption2"
+
+# nc_options: specifies the user NCSim command line options
+#set nc_options "NCoption1 NCoption2"
+
+# mti_options: specifies the user ModelSim command line options
+#set mti_options "MTIoption1 MTIoption2"
+
+# xl_options: specifies the user Verilog XL command line options
+#set xl_options "XLoption1 XLoption2"
+
+#### TB file formatting section
+# cfg_tb_format_extended: specifies whether an extended TB file is need
+#set cfg_tb_format_extended 0
+
+#### TB file IDDQ Testing parameters
+# cfg_iddq_seed_file: set this parameter when faults are seeded from an external fault list file and you want to override the default <tb_module_name>.faults
+#set cfg_iddq_seed_file "your_fault_list_file"
+
+# cfg_iddq_verbose: 1 (default) to enable PowerFault verbose report, 0 otherwise
+#set cfg_iddq_verbose 1
+
+# cfg_iddq_leaky_status: 1 (default), enable generaton of PowerFault leaky nodes report in file <tb_name>.leaky, 0 otherwise 
+#set cfg_iddq_leaky_status 1
+
+# cfg_iddq_seed_faul_model: set the PowerFault fault model, 0 (default) SA faults, 1 for Bridging faults, for automatic seeding 
+#set cfg_iddq_seed_faul_model 0
+
+# cfg_iddq_cycle: set the initial counter value for IDDQ strobes (default to 0) 
+#set cfg_iddq_cycle 0
+
+# cfg_nb_patterns_per_psd_file: set the patterns number per PSD file for the Enhanced Debug for CPV (EDCPV) flow 
+#set cfg_nb_patterns_per_psd_file 1000
+

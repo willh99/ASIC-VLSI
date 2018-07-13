@@ -1,0 +1,72 @@
+ 
+****************************************
+Report : area
+Design : mips
+Version: G-2012.06
+Date   : Tue May  1 11:30:17 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/seas/willh99/ece128/project/hw_files/db/osu05_stdcells.db)
+
+Number of ports:                           28
+Number of nets:                            78
+Number of cells:                           21
+Number of combinational cells:             18
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         18
+Number of references:                       4
+
+Combinational area:       188919.000000
+Noncombinational area:    120960.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          309879.000000
+Total area:                 undefined
+1
+ 
+****************************************
+Report : cell
+Design : mips
+Version: G-2012.06
+Date   : Tue May  1 11:30:17 2018
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        INVX2           osu05_stdcells  144.000000
+U2                        INVX2           osu05_stdcells  144.000000
+U3                        INVX2           osu05_stdcells  144.000000
+U4                        INVX2           osu05_stdcells  144.000000
+U5                        INVX2           osu05_stdcells  144.000000
+U6                        INVX2           osu05_stdcells  144.000000
+U7                        INVX2           osu05_stdcells  144.000000
+U8                        INVX2           osu05_stdcells  144.000000
+U9                        INVX2           osu05_stdcells  144.000000
+U10                       INVX2           osu05_stdcells  144.000000
+U11                       INVX2           osu05_stdcells  144.000000
+U12                       INVX2           osu05_stdcells  144.000000
+U13                       INVX2           osu05_stdcells  144.000000
+U14                       INVX2           osu05_stdcells  144.000000
+U15                       INVX2           osu05_stdcells  144.000000
+U16                       INVX2           osu05_stdcells  144.000000
+U17                       INVX2           osu05_stdcells  144.000000
+U18                       INVX2           osu05_stdcells  144.000000
+ac                        alucontrol                      3654.000000
+                                                                    h
+cont                      controller                      22941.000000
+                                                                    h, n
+dp                        datapath                        280692.000000
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 21 cells                                            309879.000000
+1

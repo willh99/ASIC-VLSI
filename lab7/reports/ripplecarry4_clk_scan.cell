@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : cell
+Design : ripplecarry4_clk
+Version: C-2009.06-SP4
+Date   : Thu Mar  3 09:29:09 2011
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U7                        AND2X1          osu05_stdcells  288.000000
+U8                        AND2X1          osu05_stdcells  288.000000
+U9                        AND2X1          osu05_stdcells  288.000000
+U10                       INVX1           osu05_stdcells  144.000000
+U14                       INVX2           osu05_stdcells  144.000000
+U15                       INVX2           osu05_stdcells  144.000000
+U16                       INVX2           osu05_stdcells  144.000000
+U17                       INVX2           osu05_stdcells  144.000000
+U18                       INVX2           osu05_stdcells  144.000000
+U19                       INVX2           osu05_stdcells  144.000000
+U20                       INVX2           osu05_stdcells  144.000000
+U21                       INVX2           osu05_stdcells  144.000000
+U22                       INVX2           osu05_stdcells  144.000000
+U23                       INVX2           osu05_stdcells  144.000000
+U24                       INVX2           osu05_stdcells  144.000000
+U25                       INVX2           osu05_stdcells  144.000000
+U26                       INVX2           osu05_stdcells  144.000000
+U27                       INVX2           osu05_stdcells  144.000000
+U28                       INVX2           osu05_stdcells  144.000000
+U29                       INVX2           osu05_stdcells  144.000000
+U30                       INVX2           osu05_stdcells  144.000000
+U31                       INVX2           osu05_stdcells  144.000000
+c0_reg_reg                DFFPOSX1_SCAN   osu_scan        1440.000000
+                                                                    n
+c1_reg_reg                DFFPOSX1_SCAN   osu_scan        1440.000000
+                                                                    n
+c2_reg_reg                DFFPOSX1_SCAN   osu_scan        1440.000000
+                                                                    n
+fa0                       fulladder_3                     1872.000000
+                                                                    h
+fa1                       fulladder_2                     1872.000000
+                                                                    h
+fa2                       fulladder_1                     1872.000000
+                                                                    h
+fa3                       fulladder_0                     1872.000000
+                                                                    h
+--------------------------------------------------------------------------------
+Total 29 cells                                            15408.000000
+1

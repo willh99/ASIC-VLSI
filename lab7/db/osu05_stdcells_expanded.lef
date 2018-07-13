@@ -1,0 +1,588 @@
+VERSION 5.6 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO DFFSR_SCAN
+  ORIGIN 0 0 ;
+  FOREIGN DFFSR_SCAN 0 0 ;
+  SIZE 72 BY 30 ;
+  SYMMETRY X Y  ;
+  PIN R
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 21.9 13.2 23.1 14.4 ;
+        RECT 29.4 12.9 30.6 14.4 ;
+        RECT 21.9 13.5 57 14.4 ;
+        RECT 55.8 12.6 57 14.4 ;
+    END
+  END R
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 19.8 22.2 21 30.9 ;
+        RECT 24.6 22.2 25.8 30.9 ;
+        RECT 29.4 22.2 30.6 30.9 ;
+        RECT 39 22.2 40.2 30.9 ;
+        RECT 43.8 22.2 45 30.9 ;
+        RECT 55.8 22.2 57 30.9 ;
+        RECT 60.6 22.2 61.8 30.9 ;
+        RECT 65.4 22.2 66.6 30.9 ;
+        RECT 70.2 22.2 71.4 30.9 ;
+        RECT 18.6 29.1 72.6 30.9 ;
+        RECT 15 22.2 16.2 30.9 ;
+        RECT 13.8 29.1 19.8 30.9 ;
+        RECT 3 16.8 4.2 30.9 ;
+        RECT 10.8 16.2 12 30.9 ;
+        RECT -0.6 29.1 15 30.9 ;
+    END
+  END vdd
+  PIN TI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 10.2 12.9 11.4 15.3 ;
+    END
+  END TI
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 11.7 4.2 14.1 ;
+    END
+  END D
+  PIN S
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 24.6 15.3 25.8 17.1 ;
+        RECT 29.7 15.3 30.9 16.5 ;
+        RECT 24.6 15.3 65.1 16.2 ;
+        RECT 63.9 15 65.1 16.2 ;
+    END
+  END S
+  PIN CLK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 43.8 6.9 46.2 8.1 ;
+    END
+  END CLK
+
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 24.6 -0.9 25.8 7.8 ;
+        RECT 39 -0.9 40.2 4.8 ;
+        RECT 43.8 -0.9 45 4.8 ;
+        RECT 60.6 -0.9 61.8 7.8 ;
+        RECT 70.2 -0.9 71.4 4.8 ;
+        RECT 18.6 -0.9 72.6 0.9 ;
+    END
+    PORT
+      LAYER metal1 ;
+        RECT 15 -0.9 16.2 4.8 ;
+        RECT 13.8 -0.9 19.8 0.9 ;
+    END
+    PORT
+      LAYER metal1 ;
+        RECT 3 -0.9 4.2 8.4 ;
+        RECT 10.8 -0.9 12 9 ;
+        RECT -0.6 -0.9 15 0.9 ;
+    END
+  END gnd
+  PIN TE
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 11.7 1.8 14.1 ;
+    END
+  END TE
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 67.8 15.3 69 28.2 ;
+        RECT 67.8 1.8 69 8.7 ;
+        RECT 68.1 7.5 69.3 16.5 ;
+    END
+  END Q
+  OBS
+    LAYER metal1 ;
+        RECT 17.4 1.8 18.6 28.2 ;
+        RECT 6.9 16.8 8.1 28.2 ;
+        RECT 6.9 3 8.1 8.4 ;
+        RECT 6.9 16.8 9.3 17.7 ;
+        RECT 8.1 7.5 9.3 9 ;
+        RECT 8.4 7.5 9.3 17.7 ;
+        RECT 8.4 9.9 11.4 11.1 ;
+        RECT 15 5.7 16.2 8.1 ;
+        RECT 39 8.7 40.2 11.1 ;
+      RECT 21.9 20.4 22.8 23.1 ;
+      RECT 19.8 20.4 22.8 21.3 ;
+      RECT 19.8 1.8 21 21.3 ;
+      RECT 23.7 18.3 24.6 21.3 ;
+      RECT 22.2 18.3 24.6 19.5 ;
+      RECT 22.2 22.2 23.4 28.2 ;
+      RECT 26.7 6.6 27.9 9.9 ;
+      RECT 23.4 8.7 27.9 9.9 ;
+      RECT 26.1 18 28.2 19.2 ;
+      RECT 27 20.1 28.2 28.2 ;
+      RECT 23.7 20.1 30 21.3 ;
+      RECT 26.7 6.6 30.6 7.8 ;
+      RECT 29.4 1.8 30.6 7.8 ;
+      RECT 19.8 10.8 33 12 ;
+      RECT 31.8 1.8 33 6 ;
+      RECT 27.3 17.4 35.4 18.3 ;
+      RECT 31.8 24 33 28.2 ;
+      RECT 34.2 1.8 35.4 6 ;
+      RECT 34.2 24 35.4 28.2 ;
+      RECT 34.2 17.1 35.4 18.3 ;
+      RECT 33.9 11.4 36.9 12.6 ;
+      RECT 35.7 6.9 36.9 12.6 ;
+      RECT 29.1 19.2 37.8 20.1 ;
+      RECT 36.6 21 37.8 28.2 ;
+      RECT 36.6 1.8 37.8 6 ;
+      RECT 36.9 17.1 37.8 20.1 ;
+      RECT 35.7 6.9 42.6 7.8 ;
+      RECT 38.7 18.9 42.6 20.1 ;
+      RECT 41.4 21 42.6 28.2 ;
+      RECT 41.4 1.8 42.6 6 ;
+      RECT 41.4 9 42.6 10.2 ;
+      RECT 42.6 11.4 47.4 12.6 ;
+      RECT 41.4 6.9 42.6 8.1 ;
+      RECT 46.2 18.9 47.4 28.2 ;
+      RECT 46.2 1.8 47.4 6 ;
+      RECT 41.4 9.3 48 10.2 ;
+      RECT 46.8 9.3 48 10.5 ;
+      RECT 48.6 1.8 49.8 6 ;
+      RECT 36.9 17.1 49.8 18 ;
+      RECT 48.6 24 49.8 28.2 ;
+      RECT 50.7 6.9 52.2 8.1 ;
+      RECT 48.6 17.1 49.8 18.3 ;
+      RECT 51 6.9 52.2 12.3 ;
+      RECT 51 1.8 52.2 6 ;
+      RECT 5.4 10.8 7.5 12 ;
+      RECT 5.4 9.3 6.9 12 ;
+      RECT 0.6 9.3 6.9 10.2 ;
+      RECT 5.4 9.3 6.3 15.9 ;
+      RECT 0.6 15 6.3 15.9 ;
+      RECT 0.6 3 1.8 6 ;
+      RECT 0.6 21 1.8 27 ;
+      RECT 0.6 3 1.5 10.2 ;
+      RECT 0.6 15 1.5 27 ;
+      RECT 51 24 52.2 28.2 ;
+      RECT 53.4 1.8 54.6 6 ;
+      RECT 53.4 24 54.6 28.2 ;
+      RECT 53.4 17.1 54.6 18.3 ;
+      RECT 55.8 1.8 57 7.8 ;
+      RECT 51 20.1 57.3 21.3 ;
+      RECT 55.8 6.6 59.4 7.8 ;
+      RECT 58.2 18.9 59.4 28.2 ;
+      RECT 58.2 6.6 59.4 9.6 ;
+      RECT 58.2 8.7 60.9 9.6 ;
+      RECT 59.7 8.7 60.9 12.6 ;
+      RECT 58.2 18.9 62.1 20.1 ;
+      RECT 63 20.4 64.2 28.2 ;
+      RECT 59.7 11.4 65.4 12.6 ;
+      RECT 65.4 1.8 66.6 10.5 ;
+      RECT 53.4 17.1 66.9 18 ;
+      RECT 63 20.4 66.9 21.3 ;
+      RECT 66 13.5 66.9 21.3 ;
+      RECT 66.3 9.6 67.2 14.4 ;
+    LAYER metal2 ;
+      RECT 17.4 9.9 18.6 11.1 ;
+      RECT 31.8 4.8 33 25.2 ;
+      RECT 34.2 4.8 35.4 25.2 ;
+      RECT 36.6 4.8 37.8 22.2 ;
+      RECT 39 9.9 40.2 11.1 ;
+      RECT 41.4 4.8 42.6 22.2 ;
+      RECT 46.2 4.8 47.4 22.2 ;
+      RECT 48.6 4.8 49.8 25.2 ;
+      RECT 51 4.8 52.2 25.2 ;
+      RECT 53.4 4.8 54.6 25.2 ;
+    LAYER via ;
+      RECT 32.1 5.1 32.7 5.7 ;
+      RECT 32.1 11.1 32.7 11.7 ;
+      RECT 32.1 24.3 32.7 24.9 ;
+      RECT 34.5 5.1 35.1 5.7 ;
+      RECT 34.5 17.4 35.1 18 ;
+      RECT 34.5 24.3 35.1 24.9 ;
+      RECT 36.9 5.1 37.5 5.7 ;
+      RECT 36.9 21.3 37.5 21.9 ;
+      RECT 41.7 5.1 42.3 5.7 ;
+      RECT 41.7 9.3 42.3 9.9 ;
+      RECT 41.7 19.2 42.3 19.8 ;
+      RECT 41.7 21.3 42.3 21.9 ;
+      RECT 46.5 5.1 47.1 5.7 ;
+      RECT 46.5 11.7 47.1 12.3 ;
+      RECT 46.5 21.3 47.1 21.9 ;
+      RECT 48.9 5.1 49.5 5.7 ;
+      RECT 48.9 17.4 49.5 18 ;
+      RECT 48.9 24.3 49.5 24.9 ;
+      RECT 51.3 5.1 51.9 5.7 ;
+      RECT 51.3 20.4 51.9 21 ;
+      RECT 51.3 24.3 51.9 24.9 ;
+      RECT 53.7 5.1 54.3 5.7 ;
+      RECT 53.7 17.4 54.3 18 ;
+      RECT 53.7 24.3 54.3 24.9 ;
+    LAYER metal3 ;
+      RECT 17.1 9.6 40.5 11.4 ;
+  END
+END DFFSR_SCAN
+
+MACRO DFFNEGX1_SCAN
+  ORIGIN 0 0 ;
+  FOREIGN DFFNEGX1_SCAN 0 0 ;
+  SIZE 48 BY 30 ;
+  SYMMETRY X Y  ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 21 9.9 23.4 11.1 ;
+        RECT 25.2 8.1 26.4 11.1 ;
+        RECT 25.5 6.9 26.7 8.1 ;
+        RECT 27 18.9 28.2 20.1 ;
+        RECT 27 10.2 28.2 11.4 ;
+        RECT 27.3 20.1 28.5 21.3 ;
+        RECT 21 10.2 38.4 11.1 ;
+        RECT 37.2 9.9 38.4 11.1 ;
+      LAYER metal2 ;
+        RECT 27 10.2 28.2 20.1 ;
+      LAYER via ;
+        RECT 27.3 19.2 27.9 19.8 ;
+        RECT 27.3 10.5 27.9 11.1 ;
+    END
+  END CLK
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 22.2 16.5 23.4 30.9 ;
+        RECT 30.6 22.2 31.8 30.9 ;
+        RECT 35.4 22.2 36.6 30.9 ;
+        RECT 43.8 16.2 45 30.9 ;
+        RECT 18.6 29.1 48.6 30.9 ;
+        RECT 15 22.2 16.2 30.9 ;
+        RECT 13.8 29.1 19.8 30.9 ;
+        RECT 3 16.8 4.2 30.9 ;
+        RECT 10.8 16.2 12 30.9 ;
+        RECT -0.6 29.1 15 30.9 ;
+    END
+  END vdd
+  PIN TI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 10.2 12.9 11.4 15.3 ;
+    END
+  END TI
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 11.7 4.2 14.1 ;
+    END
+  END D
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 41.1 14.1 42.3 15.3 ;
+        RECT 41.7 8.1 42.9 9.3 ;
+        RECT 41.1 14.4 47.4 15.3 ;
+        RECT 41.7 8.4 47.4 9.3 ;
+        RECT 46.2 1.8 47.4 28.2 ;
+    END
+  END Q
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 22.2 -0.9 23.4 7.8 ;
+        RECT 30.3 -0.9 31.8 4.8 ;
+        RECT 35.4 -0.9 36.6 4.8 ;
+        RECT 43.8 -0.9 45 7.5 ;
+        RECT 18.6 -0.9 48.6 0.9 ;
+        RECT 15 -0.9 16.2 4.8 ;
+        RECT 13.8 -0.9 19.8 0.9 ;
+        RECT 3 -0.9 4.2 8.4 ;
+        RECT 10.8 -0.9 12 9 ;
+        RECT -0.6 -0.9 15 0.9 ;
+    END
+  END gnd
+  PIN TE
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 11.7 1.8 14.1 ;
+    END
+  END TE
+  OBS
+    LAYER metal1 ;
+        RECT 17.4 1.8 18.6 28.2 ;
+        RECT 6.9 16.8 8.1 28.2 ;
+        RECT 6.9 3 8.1 8.4 ;
+        RECT 6.9 16.8 9.3 17.7 ;
+        RECT 8.1 7.5 9.3 9 ;
+        RECT 8.4 7.5 9.3 17.7 ;
+        RECT 8.4 9.9 11.4 11.1 ;
+        RECT 15 5.7 16.2 8.1 ;
+      RECT 23.4 12.6 24.6 13.8 ;
+        RECT 23.4 12.9 30.6 13.8 ;
+        RECT 29.4 12.9 30.6 14.1 ;
+        RECT 24.6 3.9 25.8 6 ;
+      RECT 19.8 1.8 21 9 ;
+      RECT 19.8 14.7 21 28.2 ;
+      RECT 19.8 14.7 26.7 15.6 ;
+      RECT 24.6 17.1 25.8 18.3 ;
+      RECT 24.6 21 25.8 23.1 ;
+      RECT 24.6 22.2 27.6 23.1 ;
+      RECT 24.6 3.9 27.6 4.8 ;
+      RECT 26.4 22.2 27.6 28.2 ;
+      RECT 26.4 1.8 27.6 4.8 ;
+      RECT 29.7 20.1 30.9 21.3 ;
+      RECT 29.7 5.7 30.9 6.9 ;
+      RECT 24.6 17.1 32.7 18 ;
+      RECT 31.5 17.1 32.7 18.3 ;
+      RECT 29.7 5.7 33.9 6.6 ;
+      RECT 33 1.8 33.9 6.6 ;
+      RECT 33 20.4 33.9 28.2 ;
+      RECT 33 22.2 34.2 28.2 ;
+      RECT 33 1.8 34.2 4.8 ;
+      RECT 29.7 20.4 35.1 21.3 ;
+      RECT 33.9 20.1 35.1 21.3 ;
+      RECT 25.5 15.3 36.3 16.2 ;
+      RECT 35.4 15.3 36.3 18.3 ;
+      RECT 35.4 17.1 36.9 18.3 ;
+      RECT 39 3.9 40.2 6 ;
+      RECT 39 12 40.2 13.2 ;
+      RECT 39 21 40.2 22.2 ;
+      RECT 35.4 17.1 41.1 18 ;
+      RECT 39.3 22.2 41.1 28.2 ;
+      RECT 39.3 1.8 41.1 4.8 ;
+      RECT 39.9 17.1 41.1 18.3 ;
+      RECT 43.5 12.3 44.7 13.5 ;
+      RECT 39 12.3 44.7 13.2 ;
+    LAYER metal2 ;
+      RECT 19.8 7.8 21 16.2 ;
+      RECT 24.6 4.8 25.5 22.2 ;
+      RECT 24.6 4.8 25.8 15 ;
+      RECT 24.6 16.2 25.8 22.2 ;
+      RECT 39 4.8 40.2 17.1 ;
+      RECT 39 4.8 39.9 22.2 ;
+      RECT 39 18.3 40.2 22.2 ;
+    LAYER via ;
+      RECT 20.1 15.3 20.7 15.9 ;
+      RECT 20.1 8.1 20.7 8.7 ;
+      RECT 24.9 5.1 25.5 5.7 ;
+      RECT 24.9 17.4 25.5 18 ;
+    LAYER metal1 ;
+      RECT 5.4 10.8 7.5 12 ;
+      RECT 5.4 9.3 6.9 12 ;
+      RECT 0.6 9.3 6.9 10.2 ;
+      RECT 5.4 9.3 6.3 15.9 ;
+      RECT 0.6 15 6.3 15.9 ;
+      RECT 0.6 3 1.8 6 ;
+      RECT 0.6 21 1.8 27 ;
+      RECT 0.6 3 1.5 10.2 ;
+      RECT 0.6 15 1.5 27 ;
+    LAYER via ;
+      RECT 24.9 21.3 25.5 21.9 ;
+      RECT 39.3 5.1 39.9 5.7 ;
+      RECT 39.3 12.3 39.9 12.9 ;
+      RECT 39.3 21.3 39.9 21.9 ;
+  END
+END DFFNEGX1_SCAN
+
+MACRO DFFPOSX1_SCAN
+  ORIGIN 0 0 ;
+  FOREIGN DFFPOSX1_SCAN 0 0 ;
+  SIZE 48 BY 30 ;
+# Added symmetry to improve P&R
+  SYMMETRY X Y  ;
+  PIN Q
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 41.1 14.1 42.3 15.3 ;
+        RECT 41.7 8.1 42.9 9.3 ;
+        RECT 41.1 14.4 47.4 15.3 ;
+        RECT 41.7 8.4 47.4 9.3 ;
+        RECT 46.2 1.8 47.4 28.2 ;
+    END
+  END Q
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 22.2 16.5 23.4 30.9 ;
+        RECT 30.6 22.2 31.8 30.9 ;
+        RECT 35.4 22.2 36.6 30.9 ;
+        RECT 43.8 16.2 45 30.9 ;
+        RECT 18.6 29.1 48.6 30.9 ;
+        RECT 15 22.2 16.2 30.9 ;
+        RECT 13.8 29.1 19.8 30.9 ;
+        RECT 3 16.8 4.2 30.9 ;
+        RECT 10.8 16.2 12 30.9 ;
+        RECT -0.6 29.1 15 30.9 ;
+    END
+  END vdd
+  PIN TI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 10.2 12.9 11.4 15.3 ;
+    END
+  END TI
+  PIN D
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 3 11.7 4.2 14.1 ;
+    END
+  END D
+  PIN CLK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 21 9.9 23.4 11.1 ;
+        RECT 25.5 10.2 26.7 11.4 ;
+        RECT 27 5.7 28.2 6.9 ;
+        RECT 27.3 5.7 28.2 11.1 ;
+        RECT 35.7 9.9 36.9 11.1 ;
+        RECT 21 10.2 37.5 11.1 ;
+        RECT 36.6 10.2 37.5 16.8 ;
+        RECT 36.6 15.9 40.2 16.8 ;
+        RECT 39.3 15.9 40.2 19.5 ;
+        RECT 39.3 18.3 41.4 19.5 ;
+    END
+  END CLK
+  PIN gnd
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER metal1 ;
+        RECT 22.2 -0.9 23.4 7.8 ;
+        RECT 30.3 -0.9 31.8 4.8 ;
+        RECT 35.4 -0.9 36.6 4.8 ;
+        RECT 43.8 -0.9 45 7.5 ;
+        RECT 18.6 -0.9 48.6 0.9 ;
+        RECT 15 -0.9 16.2 4.8 ;
+        RECT 13.8 -0.9 19.8 0.9 ;
+        RECT 3 -0.9 4.2 8.4 ;
+        RECT 10.8 -0.9 12 9 ;
+        RECT -0.6 -0.9 15 0.9 ;
+    END
+  END gnd
+  PIN TE
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER metal1 ;
+        RECT 0.6 11.7 1.8 14.1 ;
+    END
+  END TE
+  OBS
+    LAYER via ;
+      RECT 39.3 21.3 39.9 21.9 ;
+      RECT 39.3 12.3 39.9 12.9 ;
+      RECT 39.3 5.1 39.9 5.7 ;
+      RECT 24.9 21.3 25.5 21.9 ;
+      RECT 24.9 17.4 25.5 18 ;
+      RECT 24.9 5.1 25.5 5.7 ;
+      RECT 20.1 15.3 20.7 15.9 ;
+      RECT 20.1 8.1 20.7 8.7 ;
+    LAYER metal2 ;
+      RECT 39 4.8 40.2 22.2 ;
+      RECT 24.6 4.8 25.8 22.2 ;
+      RECT 19.8 7.8 21 16.2 ;
+    LAYER metal1 ;
+        RECT 23.1 12.6 24.3 13.8 ;
+        RECT 23.1 12.9 30.6 13.8 ;
+        RECT 29.4 12.9 30.6 14.1 ;
+        RECT 17.4 1.8 18.6 28.2 ;
+        RECT 6.9 16.8 8.1 28.2 ;
+        RECT 6.9 3 8.1 8.4 ;
+        RECT 6.9 16.8 9.3 17.7 ;
+        RECT 8.1 7.5 9.3 9 ;
+        RECT 8.4 7.5 9.3 17.7 ;
+        RECT 8.4 9.9 11.4 11.1 ;
+        RECT 15 5.7 16.2 8.1 ;
+
+      RECT 43.5 12.3 44.7 13.5 ;
+      RECT 39 12.3 44.7 13.2 ;
+      RECT 39.3 1.8 41.1 4.8 ;
+      RECT 39.3 22.2 41.1 28.2 ;
+      RECT 39 21 40.2 22.2 ;
+      RECT 39 12 40.2 13.2 ;
+      RECT 39 3.9 40.2 6 ;
+      RECT 35.7 17.7 36.9 18.9 ;
+      RECT 33.6 18 36.9 18.9 ;
+      RECT 33.9 20.1 35.1 21.3 ;
+      RECT 29.7 20.4 35.1 21.3 ;
+      RECT 33.6 15.3 34.5 18.9 ;
+      RECT 27.3 15.3 34.5 16.2 ;
+      RECT 33 1.8 34.2 4.8 ;
+      RECT 33 22.2 34.2 28.2 ;
+      RECT 33 1.8 33.9 6.6 ;
+      RECT 33 20.4 33.9 28.2 ;
+      RECT 29.7 5.7 33.9 6.6 ;
+      RECT 31.5 17.1 32.7 18.3 ;
+      RECT 24.6 17.1 32.7 18 ;
+      RECT 29.7 5.7 30.9 6.9 ;
+      RECT 29.7 20.1 30.9 21.3 ;
+      RECT 19.8 15 28.5 15.6 ;
+      RECT 19.8 14.7 28.2 15.6 ;
+      RECT 26.4 1.8 27.6 4.8 ;
+      RECT 26.4 22.2 27.6 28.2 ;
+      RECT 24.6 22.2 27.6 23.1 ;
+      RECT 24.6 3.9 27.6 4.8 ;
+      RECT 24.6 17.1 25.8 18.3 ;
+      RECT 24.6 21 25.8 23.1 ;
+      RECT 24.6 3.9 25.8 6 ;
+      RECT 19.8 1.8 21 9 ;
+      RECT 19.8 14.7 21 28.2 ;
+      RECT 5.4 10.8 7.5 12 ;
+      RECT 5.4 9.3 6.9 12 ;
+      RECT 0.6 9.3 6.9 10.2 ;
+      RECT 5.4 9.3 6.3 15.9 ;
+      RECT 0.6 15 6.3 15.9 ;
+      RECT 0.6 3 1.8 6 ;
+      RECT 0.6 21 1.8 27 ;
+      RECT 0.6 3 1.5 10.2 ;
+      RECT 0.6 15 1.5 27 ;
+  END
+END DFFPOSX1_SCAN
+
+END LIBRARY
